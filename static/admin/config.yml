@@ -8,7 +8,7 @@ public_folder: /img
 collections:
   - name: 'blog'
     label: 'Blog'
-    folder: 'content/blog'
+    folder: 'content/articles'
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -22,7 +22,7 @@ collections:
 
   - name: 'notice'
     label: 'Notice'
-    folder: 'content/notice'
+    folder: 'content/notices'
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
