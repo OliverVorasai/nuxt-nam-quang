@@ -101,7 +101,7 @@ export default {
     VuetifyLogo,
   },
   async asyncData({ $content, params }) {
-    const notices = await $content('notice', params.slug)
+    const notices = await $content('notices', params.slug)
       .sortBy('createdAt', 'asc')
       .fetch()
 
