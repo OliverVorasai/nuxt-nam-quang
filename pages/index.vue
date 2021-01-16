@@ -1,10 +1,7 @@
 <template>
   <v-row justify="center" align="center">
+    <hero />
     <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
       <div>
         <h1>Notices</h1>
         <ul>
@@ -21,6 +18,26 @@
           Welcome to the Vuetify + Nuxt.js template
         </v-card-title>
         <v-card-text>
+          <p>
+            Vuetify is a progressive Material Design component framework for
+            Vue.js. It was designed to empower developers to create amazing
+            applications.
+          </p>
+          <p>
+            Vuetify is a progressive Material Design component framework for
+            Vue.js. It was designed to empower developers to create amazing
+            applications.
+          </p>
+          <p>
+            Vuetify is a progressive Material Design component framework for
+            Vue.js. It was designed to empower developers to create amazing
+            applications.
+          </p>
+          <p>
+            Vuetify is a progressive Material Design component framework for
+            Vue.js. It was designed to empower developers to create amazing
+            applications.
+          </p>
           <p>
             Vuetify is a progressive Material Design component framework for
             Vue.js. It was designed to empower developers to create amazing
@@ -92,14 +109,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
 export default {
-  components: {
-    Logo,
-    VuetifyLogo,
-  },
   async asyncData({ $content, params }) {
     const notices = await $content('notices', params.slug)
       .sortBy('createdAt', 'asc')
@@ -118,3 +128,52 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.hero-image {
+  width: 100%;
+  position: relative;
+}
+.custom-shape-divider-top-1610776821 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.custom-shape-divider-top-1610776821 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 25px;
+}
+
+.custom-shape-divider-top-1610776821 .shape-fill {
+  fill: #ffffff;
+}
+
+.custom-shape-divider-bottom-1610776924 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.custom-shape-divider-bottom-1610776924 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 25px;
+}
+
+.custom-shape-divider-bottom-1610776924 .shape-fill {
+  fill: #ffffff;
+}
+</style>
