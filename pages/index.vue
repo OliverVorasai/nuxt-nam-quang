@@ -5,6 +5,17 @@
         <logo />
         <vuetify-logo />
       </div>
+      <div>
+        <h1>Notices</h1>
+        <ul>
+          <li v-for="notice in notices" :key="notice.slug">
+            <div>
+              <h2>{{ notice.title }}</h2>
+              <nuxt-content :document="notice" />
+            </div>
+          </li>
+        </ul>
+      </div>
       <v-card>
         <v-card-title class="headline">
           Welcome to the Vuetify + Nuxt.js template
@@ -88,6 +99,15 @@ export default {
   components: {
     Logo,
     VuetifyLogo,
+  },
+  async asyncData({ $content, params }) {
+    const notices = await $content('notice', params.slug)
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+    return {
+      notices,
+    }
   },
   head() {
     return {
