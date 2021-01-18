@@ -1,6 +1,16 @@
 <template>
   <v-row justify="center" align="center">
-    <hero />
+    <Hero />
+    <InlineMessage :message="getMessage(inlinemessages, 'inline-1')" />
+    <PictureMessage
+      :message="getMessage(picturemessages, 'picturemessage-1')"
+      :reverse-order="false"
+    />
+    <InlineMessage :message="getMessage(inlinemessages, 'inline-2')" />
+    <PictureMessage
+      :message="getMessage(picturemessages, 'picturemessage-2')"
+      :reverse-order="true"
+    />
     <v-col cols="12" sm="8" md="6">
       <div>
         <h1>Notices</h1>
@@ -13,97 +23,6 @@
           </li>
         </ul>
       </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
-          </p>
-          <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation </a
-            >.
-          </p>
-          <p>
-            If you have questions, please join the official
-            <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
-          </p>
-          <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
-          </p>
-          <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
-          </p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3" />
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-        </v-card-actions>
-      </v-card>
     </v-col>
   </v-row>
 </template>
@@ -114,10 +33,24 @@ export default {
     const notices = await $content('notices', params.slug)
       .sortBy('createdAt', 'asc')
       .fetch()
+    const inlinemessages = await $content('inlinemessages', params.slug).fetch()
+    const picturemessages = await $content(
+      'picturemessages',
+      params.slug
+    ).fetch()
 
     return {
       notices,
+      inlinemessages,
+      picturemessages,
     }
+  },
+  methods: {
+    getMessage(message, id) {
+      return message.find((obj) => {
+        return obj.id === id
+      })
+    },
   },
   head() {
     return {
@@ -128,52 +61,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.hero-image {
-  width: 100%;
-  position: relative;
-}
-.custom-shape-divider-top-1610776821 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 1;
-}
-
-.custom-shape-divider-top-1610776821 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 25px;
-}
-
-.custom-shape-divider-top-1610776821 .shape-fill {
-  fill: #ffffff;
-}
-
-.custom-shape-divider-bottom-1610776924 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  z-index: 2;
-}
-
-.custom-shape-divider-bottom-1610776924 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 25px;
-}
-
-.custom-shape-divider-bottom-1610776924 .shape-fill {
-  fill: #ffffff;
-}
-</style>
