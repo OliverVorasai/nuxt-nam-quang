@@ -32,3 +32,30 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'inlinemessage'
+    label: 'Inline Messages'
+    folder: 'content/inlinemessages'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Identifier', name: 'id', widget: string }
+
+  - name: 'picturemessage'
+    label: 'Picture Messages'
+    folder: 'content/picturemessages'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    edtior:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Identifier', name: 'id', widget: string }
