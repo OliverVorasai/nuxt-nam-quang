@@ -58,6 +58,7 @@
           <v-row justify="end" justify-md="center" class="mr-2 mr-sm-0">
             <nuxt-link to="/" tag="span" style="cursor: pointer">
               <v-img
+                class="zoom"
                 max-height="128"
                 max-width="128"
                 :src="require('@/assets/svg/lotus.svg/')"
