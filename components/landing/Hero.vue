@@ -5,7 +5,7 @@
       <v-row class="hero-text">
         <v-col align-self="center">
           <h2 class="text-center text-h1 font-weight-medium white--text">
-            Nam Quang Temple
+            {{ heroText }}
           </h2>
         </v-col>
       </v-row>
@@ -13,6 +13,20 @@
     <BottomCalligraphyDivider />
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    heroText: {
+      type: String,
+      required: true,
+      default() {
+        return ''
+      },
+    },
+  },
+}
+</script>
 
 <style scoped lang="scss">
 .hero-image {

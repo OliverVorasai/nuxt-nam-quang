@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero />
+    <Hero hero-text="Nam Quang Temple" />
     <InlineMessage :message="getMessage(inlinemessages, 'inline-1')" />
     <PictureMessage
       :message="getMessage(picturemessages, 'picturemessage-1')"

@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero />
+    <Hero hero-text="Contact Us" />
     <InlineMessage :message="getMessage(inlinemessages, 'inline-3')" />
   </v-row>
 </template>
