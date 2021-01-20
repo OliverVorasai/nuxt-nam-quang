@@ -28,7 +28,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar absolute prominent flat app color="white">
-      <v-row class="app-bar-row">
+      <v-row class="app-bar-row mt-1">
         <v-col cols="6" align-self="center" class="hidden-md-and-up">
           <v-app-bar-nav-icon
             color="black"
@@ -54,14 +54,16 @@
             </v-btn>
           </div>
         </v-col>
-        <v-col cols="6" md="2" align-self="center">
-          <div class="text-center">
-            <v-toolbar-title>
-              <nuxt-link to="/" tag="span" style="cursor: pointer">
-                <span class="text-wrap">{{ title }}</span>
-              </nuxt-link>
-            </v-toolbar-title>
-          </div>
+        <v-col cols="6" md="2" align-self="center" class="text-center">
+          <v-row justify="end" justify-md="center" class="mr-2 mr-sm-0">
+            <nuxt-link to="/" tag="span" style="cursor: pointer">
+              <v-img
+                max-height="128"
+                max-width="128"
+                :src="require('@/assets/svg/lotus.svg/')"
+              ></v-img>
+            </nuxt-link>
+          </v-row>
         </v-col>
         <v-col align-self="center" class="hidden-sm-and-down">
           <div class="text-left">
