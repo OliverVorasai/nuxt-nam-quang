@@ -117,8 +117,8 @@ export default {
         },
         {
           icon: 'mdi-apps',
-          title: 'Calendar',
-          to: '/calendar',
+          title: 'Contact',
+          to: '/contact',
         },
       ],
       title: 'Nam Quang Temple',
