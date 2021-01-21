@@ -3,7 +3,7 @@
     <TopCalligraphyDivider />
     <v-row class="orange darken-1" no-gutters>
       <v-col cols="12" md="6" align-self="center" :order="setMessageOrder">
-        <div class="pa-12">
+        <div v-intersect.once="fadeOnIntersect" class="pa-12 fade fade-out">
           <h3 class="my-4">{{ message.title }}</h3>
           <nuxt-content :document="message" />
         </div>
