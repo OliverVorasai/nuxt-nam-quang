@@ -9,7 +9,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const blog = await $content(`blogs/${params.slug}`).fetch()
+    const blog = await $content(`blog/${params.slug}`).fetch()
 
     return {
       blog,
@@ -23,3 +23,13 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.icon.icon-link {
+  background-image: url('~assets/svg/icon-hashtag.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+</style>
