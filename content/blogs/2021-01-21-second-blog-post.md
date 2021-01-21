@@ -2,6 +2,7 @@
 title: Second Blog Post
 date: 2021-01-21T03:47:40.083Z
 description: Some description woo hoo
+image: /img/pexels-mike-van-schoonderwalt-5504722.jpg
 ---
 # Some heading
 
