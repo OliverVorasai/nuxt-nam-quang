@@ -1,7 +1,7 @@
 <template>
-  <v-row justify="center" align="center" no-gutters>
+  <v-row justify="center" align="center">
     <Hero hero-text="Blog" />
-
+    <InlineMessage :message="getMessage(inlineMessages, 'inline-5')" />
     <v-col cols="12" sm="8" md="6">
       <v-card
         v-for="post in blog"
@@ -11,13 +11,17 @@
         flat
         class="my-12 highlight"
       >
-        <v-row no-gutters>
+        <v-row
+          v-intersect.once="fadeOnIntersect"
+          class="fade fade-out"
+          no-gutters
+        >
           <v-col md="4">
             <v-img max-height="256" max-width="512" :src="post.image"></v-img>
           </v-col>
           <v-col>
             <v-card-text>
-              <div>{{ formateDate(post.updatedAt) }}</div>
+              <div>{{ formateDate(post.createdAt) }}</div>
               <p class="display-1 text--primary">{{ post.title }}</p>
               <div class="text--primary">{{ post.description }}</div>
             </v-card-text>
@@ -32,9 +36,11 @@
 export default {
   async asyncData({ $content }) {
     const blog = await $content('blog').fetch()
+    const inlineMessages = await $content('inlinemessages').fetch()
 
     return {
       blog,
+      inlineMessages,
     }
   },
   methods: {
