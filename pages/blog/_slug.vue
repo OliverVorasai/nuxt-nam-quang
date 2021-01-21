@@ -1,18 +1,18 @@
 <template>
   <div>
-    <h2>{{ article.title }}</h2>
-    <p>Post last updated: {{ formateDate(article.updatedAt) }}</p>
-    <nuxt-content :document="article" />
+    <h2>{{ blog.title }}</h2>
+    <p>Post last updated: {{ formateDate(blog.updatedAt) }}</p>
+    <nuxt-content :document="blog" />
   </div>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content(`articles/${params.slug}`).fetch()
+    const blog = await $content(`blogs/${params.slug}`).fetch()
 
     return {
-      article,
+      blog,
     }
   },
   methods: {
