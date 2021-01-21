@@ -1,9 +1,12 @@
 <template>
-  <div>
-    <h2>{{ blog.title }}</h2>
-    <p>Post last updated: {{ formateDate(blog.updatedAt) }}</p>
-    <nuxt-content :document="blog" />
-  </div>
+  <v-row justify="center" align="center">
+    <Hero hero-text="Blog Post" />
+    <v-col cols="12" sm="10" md="8" lg="6" class="my-12">
+      <h1 class="text-center">{{ blog.title }}</h1>
+      <p class="text-right">{{ formateDate(blog.updatedAt) }}</p>
+      <nuxt-content class="tester1" :document="blog" />
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -24,12 +27,12 @@ export default {
 }
 </script>
 
-<style scoped>
-.icon.icon-link {
-  background-image: url('~assets/svg/icon-hashtag.svg');
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: 20px 20px;
+<style scoped lang="scss">
+::v-deep .nuxt-content {
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 </style>
