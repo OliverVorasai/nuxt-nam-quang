@@ -12,7 +12,7 @@
         class="my-12 highlight"
       >
         <v-row no-gutters>
-          <v-col>
+          <v-col md="4">
             <v-img max-height="256" max-width="512" :src="post.image"></v-img>
           </v-col>
           <v-col>
