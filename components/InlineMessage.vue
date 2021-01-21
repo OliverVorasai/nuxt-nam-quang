@@ -1,9 +1,16 @@
 <template>
-  <v-col cols="12" sm="8" md="4" class="my-8 my-md-16">
-    <div v-intersect.once="fadeOnIntersect" class="text-center fade fade-out">
-      <h3 class="my-4">{{ message.title }}</h3>
-      <nuxt-content :document="message" />
-    </div>
+  <v-col cols="12" class="my-8 my-md-16">
+    <v-row justify="center">
+      <v-col cols="12" sm="8" md="6" lg="4">
+        <div
+          v-intersect.once="fadeOnIntersect"
+          class="text-center fade fade-out"
+        >
+          <h3 class="my-4">{{ message.title }}</h3>
+          <nuxt-content :document="message" />
+        </div>
+      </v-col>
+    </v-row>
   </v-col>
 </template>
 
