@@ -2,14 +2,16 @@
   <div class="hero-image grey lighten-2">
     <TopCalligraphyDivider />
     <v-img
-      v-intersect.once="fadeOnIntersect"
       :src="require('@/assets/frontpage-banner.jpg')"
       min-height="400"
       eager
-      class="fade fade-out"
     >
       <v-row class="hero-text">
-        <v-col align-self="center">
+        <v-col
+          v-intersect.once="fadeOnIntersect"
+          align-self="center"
+          class="fade fade-out"
+        >
           <h2 class="text-center text-h1 font-weight-medium white--text">
             {{ heroText }}
           </h2>
