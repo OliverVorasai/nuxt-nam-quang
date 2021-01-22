@@ -3,14 +3,14 @@
     <v-navigation-drawer
       v-model="drawer"
       disable-resize-watcher
-      color="black"
       app
+      class="nav-drawer"
     >
       <v-list>
         <v-list-item>
           <v-list-item-content>
             <v-list-item-title class="title white--text">
-              Menu
+              Nam Quang Temple
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -100,24 +100,24 @@ export default {
       drawer: false,
       leftLinks: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-information',
           title: 'About',
           to: '/about',
         },
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-map',
           title: 'Location',
           to: '/location',
         },
       ],
       rightLinks: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-post',
           title: 'Blog',
           to: '/blog',
         },
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-phone',
           title: 'Contact',
           to: '/contact',
         },
@@ -137,5 +137,9 @@ export default {
 }
 .zoom:hover {
   transform: scale(1.2);
+}
+.nav-drawer {
+  background-image: linear-gradient(#292e49, #536976);
+  opacity: 0.95;
 }
 </style>
