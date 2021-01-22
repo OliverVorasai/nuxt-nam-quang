@@ -17,15 +17,27 @@
 <script>
 export default {
   props: {
-    message: {
-      type: Object,
+    messages: {
+      type: Array,
       required: true,
       default: () => null,
+    },
+    messageId: {
+      type: String,
+      required: true,
+      default: () => '',
     },
     dense: {
       type: Boolean,
       required: false,
       default: () => false,
+    },
+  },
+  computed: {
+    message() {
+      return this.messages.find((obj) => {
+        return obj.id === this.messageId
+      })
     },
   },
 }

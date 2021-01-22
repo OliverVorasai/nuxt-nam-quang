@@ -24,19 +24,20 @@
 <script>
 export default {
   props: {
-    message: {
-      type: Object,
+    messages: {
+      type: Array,
       required: true,
-      default() {
-        return {}
-      },
+      default: () => null,
+    },
+    messageId: {
+      type: String,
+      required: true,
+      default: () => '',
     },
     reverseOrder: {
       type: Boolean,
       required: true,
-      default() {
-        return false
-      },
+      default: () => false,
     },
   },
   computed: {
@@ -46,6 +47,11 @@ export default {
       } else {
         return 'first'
       }
+    },
+    message() {
+      return this.messages.find((obj) => {
+        return obj.id === this.messageId
+      })
     },
   },
 }
