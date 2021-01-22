@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero hero-text="Nam Quang Temple" />
+    <Hero :hero-images="heroImages" hero-text="Nam Quang Temple" />
     <InlineMessage :messages="inlinemessages" message-id="inline-1" />
     <PictureMessage
       :messages="picturemessages"
@@ -33,11 +33,13 @@ export default {
       .fetch()
     const inlinemessages = await $content('inlinemessages').fetch()
     const picturemessages = await $content('picturemessages').fetch()
+    const heroImages = await $content('heroimages').fetch()
 
     return {
       blog,
       inlinemessages,
       picturemessages,
+      heroImages,
     }
   },
   head() {

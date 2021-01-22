@@ -1,11 +1,7 @@
 <template>
   <div class="hero-image grey lighten-2">
     <TopCalligraphyDivider />
-    <v-img
-      :src="require('@/assets/frontpage-banner.jpg')"
-      min-height="400"
-      eager
-    >
+    <v-img :src="randomImage.image" min-height="400" eager>
       <v-row class="hero-text">
         <v-col
           v-intersect.once="fadeOnIntersect"
@@ -25,12 +21,20 @@
 <script>
 export default {
   props: {
+    heroImages: {
+      type: Array,
+      require: true,
+      default: () => [],
+    },
     heroText: {
       type: String,
       required: true,
-      default() {
-        return ''
-      },
+      default: () => '',
+    },
+  },
+  computed: {
+    randomImage() {
+      return this.heroImages[Math.floor(Math.random() * this.heroImages.length)]
     },
   },
 }

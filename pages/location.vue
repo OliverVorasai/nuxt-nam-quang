@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" class="mt-6">
-    <Hero hero-text="Location" />
+    <Hero :hero-images="heroImages" hero-text="Location" />
     <InlineMessage :messages="inlinemessages" message-id="inline-4" dense />
     <iframe
       class="my-12"
@@ -16,9 +16,11 @@
 export default {
   async asyncData({ $content }) {
     const inlinemessages = await $content('inlinemessages').fetch()
+    const heroImages = await $content('heroimages').fetch()
 
     return {
       inlinemessages,
+      heroImages,
     }
   },
 }

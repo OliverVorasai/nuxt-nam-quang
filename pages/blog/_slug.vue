@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero hero-text="Blog Post" />
+    <Hero :hero-images="heroImages" hero-text="Blog Post" />
     <v-col cols="12" sm="10" md="8" lg="6" class="my-12">
       <h1 id="title" class="text-center">
         {{ blog.title }}
@@ -56,6 +56,7 @@
 export default {
   async asyncData({ $content, params }) {
     const blog = await $content('blog', params.slug).fetch()
+    const heroImages = await $content('heroimages').fetch()
 
     const [prev, next] = await $content('blog')
       .only(['title', 'slug'])
@@ -67,6 +68,7 @@ export default {
       blog,
       prev,
       next,
+      heroImages,
     }
   },
   methods: {
