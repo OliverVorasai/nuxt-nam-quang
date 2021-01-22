@@ -1,7 +1,11 @@
 <template>
   <div class="hero-image">
     <TopCalligraphyDivider />
-    <v-img :src="require('@/assets/frontpage-banner.jpg')" min-height="400">
+    <v-img
+      :src="require('@/assets/frontpage-banner.jpg')"
+      min-height="400"
+      eager
+    >
       <v-row class="hero-text">
         <v-col
           v-intersect.once="fadeOnIntersect"
