@@ -2,9 +2,52 @@
   <v-row justify="center" align="center">
     <Hero hero-text="Blog Post" />
     <v-col cols="12" sm="10" md="8" lg="6" class="my-12">
-      <h1 class="text-center">{{ blog.title }}</h1>
-      <p class="text-right">{{ formateDate(blog.updatedAt) }}</p>
+      <h1 id="title" class="text-center">
+        {{ blog.title }}
+        <a aria-hidden="true" :href="'#title'" tabindex="-1">
+          <v-icon class="hash-link">mdi-link</v-icon>
+        </a>
+      </h1>
+      <p class="text-right">{{ formateDate(blog.createdAt) }}</p>
+      <p
+        v-if="blog.createdAt !== blog.updatedAt"
+        class="text-right text-caption"
+      >
+        Updated on: {{ formateDate(blog.updatedAt) }}
+      </p>
       <nuxt-content class="tester1" :document="blog" />
+    </v-col>
+    <v-col cols="12" class="mb-12">
+      <v-row justify="center" align="center">
+        <v-col cols="12" sm="10" md="8" lg="6">
+          <v-row>
+            <v-col cols="6">
+              <NuxtLink
+                v-if="prev"
+                :to="{
+                  name: 'blog-slug',
+                  params: { slug: prev.slug },
+                  hash: '#title',
+                }"
+              >
+                Prev
+              </NuxtLink>
+            </v-col>
+            <v-col cols="6" class="text-right">
+              <NuxtLink
+                v-if="next"
+                :to="{
+                  name: 'blog-slug',
+                  params: { slug: next.slug },
+                  hash: '#title',
+                }"
+              >
+                Next
+              </NuxtLink>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
     </v-col>
   </v-row>
 </template>
@@ -12,10 +55,18 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const blog = await $content(`blog/${params.slug}`).fetch()
+    const blog = await $content('blog', params.slug).fetch()
+
+    const [prev, next] = await $content('blog')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'desc')
+      .surround(params.slug)
+      .fetch()
 
     return {
       blog,
+      prev,
+      next,
     }
   },
   methods: {
@@ -50,5 +101,9 @@ export default {
       padding-bottom: 1em;
     }
   }
+}
+
+.hash-link {
+  transform: rotate(-45deg);
 }
 </style>
