@@ -6,12 +6,14 @@
       :messages="picturemessages"
       message-id="picturemessage-1"
       :reverse-order="false"
+      color-classes="orange accent-1"
     />
     <InlineMessage :messages="inlinemessages" message-id="inline-2" />
     <PictureMessage
       :messages="picturemessages"
       message-id="picturemessage-2"
       :reverse-order="true"
+      color-classes="blue-grey lighten-2"
     />
     <InlineMessage :messages="inlinemessages" message-id="inline-6" dense />
     <BlogList :blog="blog" />

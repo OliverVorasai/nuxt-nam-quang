@@ -1,7 +1,7 @@
 <template>
   <div class="picture-message-container">
     <TopCalligraphyDivider />
-    <v-row class="orange darken-1" no-gutters>
+    <v-row :class="colorClasses" no-gutters>
       <v-col cols="12" md="6" align-self="center" :order="setMessageOrder">
         <div v-intersect.once="fadeOnIntersect" class="pa-12 fade fade-out">
           <h3 class="my-4">{{ message.title }}</h3>
@@ -38,6 +38,11 @@ export default {
       type: Boolean,
       required: true,
       default: () => false,
+    },
+    colorClasses: {
+      type: String,
+      require: false,
+      default: () => 'orange',
     },
   },
   computed: {
