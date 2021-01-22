@@ -15,13 +15,22 @@
     />
     <InlineMessage :messages="inlinemessages" message-id="inline-6" dense />
     <BlogList :blog="blog" />
+    <v-col cols="12" class="text-center">
+      <v-btn :to="'/blog'" exact nuxt dark x-large color="indigo">
+        <v-icon left> mdi-post </v-icon>
+        View More Blog Posts
+      </v-btn>
+    </v-col>
   </v-row>
 </template>
 
 <script>
 export default {
   async asyncData({ $content }) {
-    const blog = await $content('blog').sortBy('createdAt', 'desc').fetch()
+    const blog = await $content('blog')
+      .sortBy('createdAt', 'desc')
+      .limit(3)
+      .fetch()
     const inlinemessages = await $content('inlinemessages').fetch()
     const picturemessages = await $content('picturemessages').fetch()
 
