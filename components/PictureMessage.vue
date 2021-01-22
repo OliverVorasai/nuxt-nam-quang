@@ -13,6 +13,7 @@
           :src="message.image"
           height="100%"
           :content-class="'unset-width'"
+          eager
         ></v-img>
       </v-col>
     </v-row>
