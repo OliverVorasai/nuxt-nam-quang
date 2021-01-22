@@ -35,7 +35,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const blog = await $content('blog').fetch()
+    const blog = await $content('blog').sortBy('createdAt', 'desc').fetch()
     const inlineMessages = await $content('inlinemessages').fetch()
 
     return {
