@@ -28,11 +28,27 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~vuetify/src/styles/settings/_variables';
+
 ::v-deep .nuxt-content {
   img {
+    float: left;
+    max-height: 500px;
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    padding-right: 1em;
+  }
+}
+
+@media #{map-get($display-breakpoints, 'sm-and-down')} {
+  ::v-deep .nuxt-content {
+    img {
+      max-height: unset;
+      height: auto;
+      width: 100%;
+      padding-bottom: 1em;
+    }
   }
 }
 </style>
