@@ -11,28 +11,15 @@
       :message="getMessage(picturemessages, 'picturemessage-2')"
       :reverse-order="true"
     />
-    <v-col cols="12" sm="8" md="6">
-      <div>
-        <h1>Notices</h1>
-        <ul>
-          <li v-for="notice in notices" :key="notice.slug">
-            <div>
-              <h2>{{ notice.title }}</h2>
-              <nuxt-content :document="notice" />
-            </div>
-          </li>
-        </ul>
-      </div>
-    </v-col>
+    <InlineMessage :message="getMessage(inlinemessages, 'inline-6')" dense />
+    <BlogList :blog="blog" />
   </v-row>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const notices = await $content('notices', params.slug)
-      .sortBy('createdAt', 'asc')
-      .fetch()
+    const blog = await $content('blog').sortBy('createdAt', 'desc').fetch()
     const inlinemessages = await $content('inlinemessages', params.slug).fetch()
     const picturemessages = await $content(
       'picturemessages',
@@ -40,7 +27,7 @@ export default {
     ).fetch()
 
     return {
-      notices,
+      blog,
       inlinemessages,
       picturemessages,
     }

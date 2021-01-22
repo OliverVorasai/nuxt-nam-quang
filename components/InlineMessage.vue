@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" class="my-8 my-md-16">
+  <v-col cols="12" :class="dense ? 'my-2 my-md-4' : 'my-8 my-md-16'">
     <v-row justify="center">
       <v-col cols="12" sm="8" md="6" lg="4">
         <div
@@ -20,9 +20,12 @@ export default {
     message: {
       type: Object,
       required: true,
-      default() {
-        return {}
-      },
+      default: () => null,
+    },
+    dense: {
+      type: Boolean,
+      required: false,
+      default: () => false,
     },
   },
 }

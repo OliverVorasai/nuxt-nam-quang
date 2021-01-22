@@ -2,33 +2,7 @@
   <v-row justify="center" align="center">
     <Hero hero-text="Blog" />
     <InlineMessage :message="getMessage(inlineMessages, 'inline-5')" />
-    <v-col cols="12" sm="8" md="6">
-      <v-card
-        v-for="post in blog"
-        :key="post.slug"
-        :to="post.path"
-        nuxt
-        flat
-        class="my-12 highlight"
-      >
-        <v-row
-          v-intersect.once="fadeOnIntersect"
-          class="fade fade-out"
-          no-gutters
-        >
-          <v-col md="4">
-            <v-img max-height="256" max-width="512" :src="post.image"></v-img>
-          </v-col>
-          <v-col>
-            <v-card-text>
-              <div>{{ formateDate(post.createdAt) }}</div>
-              <p class="display-1 text--primary">{{ post.title }}</p>
-              <div class="text--primary">{{ post.description }}</div>
-            </v-card-text>
-          </v-col>
-        </v-row>
-      </v-card>
-    </v-col>
+    <BlogList :blog="blog" />
   </v-row>
 </template>
 
@@ -49,20 +23,6 @@ export default {
         return obj.id === id
       })
     },
-    formateDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
-    },
   },
 }
 </script>
-
-<style scoped>
-.highlight {
-  border: 1px solid transparent;
-  transition: border 0.75s;
-}
-.highlight:hover {
-  border: 1px solid red;
-}
-</style>
