@@ -53,10 +53,21 @@ collections:
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    edtior:
+    editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Identifier', name: 'id', widget: string }
+
+  - name: 'heroimages'
+    label: 'Hero Images'
+    folder: 'content/heroimages'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Image', name: 'image', widget: 'image' }
