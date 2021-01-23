@@ -1,6 +1,5 @@
 <template>
   <div class="picture-message-container">
-    <TopCalligraphyDivider />
     <v-row :class="colorClasses" no-gutters>
       <v-col cols="12" md="6" align-self="center" :order="setMessageOrder">
         <div v-intersect.once="fadeOnIntersect" class="pa-12 fade fade-out">
@@ -17,7 +16,6 @@
         ></v-img>
       </v-col>
     </v-row>
-    <BottomCalligraphyDivider />
   </div>
 </template>
 

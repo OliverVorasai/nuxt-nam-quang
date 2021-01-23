@@ -1,6 +1,5 @@
 <template>
   <v-container fluid>
-    <TopCalligraphyDivider />
     <v-row justify="center" align="center" class="mt-16" no-gutters>
       <v-col cols="12" md="8">
         <v-row class="footer-text-container my-6" no-gutters>

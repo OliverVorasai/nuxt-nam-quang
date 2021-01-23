@@ -1,6 +1,5 @@
 <template>
   <div class="hero-image grey lighten-2">
-    <TopCalligraphyDivider />
     <v-img :src="randomImage.image" min-height="400" eager>
       <v-row class="hero-text">
         <v-col
@@ -14,7 +13,6 @@
         </v-col>
       </v-row>
     </v-img>
-    <BottomCalligraphyDivider />
   </div>
 </template>
 
