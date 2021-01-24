@@ -27,7 +27,7 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar absolute prominent flat app color="white">
+    <v-app-bar absolute prominent flat app color="transparent">
       <v-row class="app-bar-row mt-1">
         <v-col cols="6" align-self="center" class="hidden-md-and-up">
           <v-app-bar-nav-icon
