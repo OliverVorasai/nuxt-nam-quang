@@ -81,8 +81,8 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'English Title', name: 'en-title', widget: 'string' }
-      - { label: 'Vietnamese Title', name: 'vi-title', widget: 'string' }
-      - { label: 'English Text', name: 'en-text', widget: 'markdown' }
-      - { label: 'Vietnamese Text', name: 'vi-text', widget: 'markdown' }
+      - { label: 'English Title', name: 'enTitle', widget: 'string' }
+      - { label: 'Vietnamese Title', name: 'viTitle', widget: 'string' }
+      - { label: 'English Text', name: 'enText', widget: 'markdown' }
+      - { label: 'Vietnamese Text', name: 'viText', widget: 'markdown' }
       - { label: 'Identifier', name: 'id', widget: string }
