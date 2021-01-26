@@ -71,3 +71,17 @@ collections:
       preview: false
     fields:
       - { label: 'Image', name: 'image', widget: 'image' }
+
+  - name: 'sutras'
+    label: 'Sutras'
+    folder: 'content/sutras'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'English Title', name: 'en-title', widget: 'string' }
+      - { label: 'Vietnamese Title', name: 'vi-title', widget: 'string' }
+      - { label: 'English Text', name: 'en-text', widget: 'markdown' }
+      - { label: 'Vietnamese Text', name: 'vi-text', widget: 'markdown' }
