@@ -5,19 +5,21 @@
         <v-row class="footer-text-container my-6" no-gutters>
           <v-col cols="12" md="4">
             <div>
-              <h4 class="pb-4">Navigation</h4>
+              <h4 class="pb-4">{{ $t('siteNav') }}</h4>
               <ul>
                 <li>
-                  <nuxt-link to="/about">About Us</nuxt-link>
+                  <nuxt-link :to="localePath('about')">About Us</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/location">Location</nuxt-link>
+                  <nuxt-link :to="localePath('location')">Location</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/blog">Blog</nuxt-link>
+                  <nuxt-link :to="localePath('blog')">{{
+                    $t('blog')
+                  }}</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/contact">Contact</nuxt-link>
+                  <nuxt-link :to="localePath('contact')">Contact</nuxt-link>
                 </li>
               </ul>
             </div>
@@ -27,7 +29,7 @@
         </v-row>
         <v-divider></v-divider>
         <v-row class="footer-text-container my-6" justify="end" no-gutters>
-          <strong>Nam Quang Temple</strong>
+          <strong>{{ $t('namQuang') }}</strong>
         </v-row>
       </v-col>
     </v-row>

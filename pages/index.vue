@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero :hero-images="heroImages" hero-text="Nam Quang Temple" />
+    <Hero :hero-images="heroImages" :hero-text="$t('namQuang')" />
     <InlineMessage :messages="inlinemessages" message-id="inline-1" />
     <PictureMessage
       :messages="picturemessages"
@@ -18,9 +18,9 @@
     <InlineMessage :messages="inlinemessages" message-id="inline-6" dense />
     <BlogList :blog="blog" />
     <v-col cols="12" class="text-center">
-      <v-btn :to="'/blog'" exact nuxt dark x-large color="indigo">
+      <v-btn :to="localePath('blog')" exact nuxt dark x-large color="indigo">
         <v-icon left> mdi-post </v-icon>
-        View More Blog Posts
+        {{ $t('viewMore') }}
       </v-btn>
     </v-col>
   </v-row>

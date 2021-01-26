@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import i18n from './config/i18n'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -44,7 +45,27 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-i18n',
   ],
+
+  i18n: {
+    defaultLocale: 'en',
+    vueI18n: i18n,
+    seo: false,
+    baseUrl: 'https://namquangtemple.org',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+      },
+      {
+        code: 'vi',
+        iso: 'vi-VN',
+        name: 'Tiếng Việt',
+      },
+    ],
+  },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
