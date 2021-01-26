@@ -5,6 +5,11 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+i18n:
+  structure: multiple_folders
+  locales: [en, vi]
+  default_locale: en
+
 collections:
   - name: 'blog'
     label: 'Blog Posts'
@@ -77,12 +82,11 @@ collections:
     folder: 'content/sutras'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{enTitle}}'
+    i18n: true
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
     editor:
       preview: false
     fields:
-      - { label: 'English Title', name: 'enTitle', widget: 'string' }
-      - { label: 'Vietnamese Title', name: 'viTitle', widget: 'string' }
-      - { label: 'English Text', name: 'enText', widget: 'markdown' }
-      - { label: 'Vietnamese Text', name: 'viText', widget: 'markdown' }
-      - { label: 'Identifier', name: 'id', widget: string }
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+      - { label: 'Identifier', name: 'id', widget: string, i18n: 'duplicate' }
