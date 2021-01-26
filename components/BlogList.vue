@@ -3,7 +3,7 @@
     <v-card
       v-for="post in blog"
       :key="post.slug"
-      :to="post.path"
+      :to="localePath(post.path)"
       nuxt
       flat
       class="my-12 highlight"
@@ -18,7 +18,7 @@
         </v-col>
         <v-col>
           <v-card-text>
-            <div>{{ formateDate(post.createdAt) }}</div>
+            <div>{{ $d(new Date(post.createdAt), 'short') }}</div>
             <p class="display-1 text--primary">{{ post.title }}</p>
             <div class="text--primary">{{ post.description }}</div>
           </v-card-text>
@@ -35,12 +35,6 @@ export default {
       type: Array,
       require: true,
       default: () => null,
-    },
-  },
-  methods: {
-    formateDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
     },
   },
 }

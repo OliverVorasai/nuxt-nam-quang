@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero :hero-images="heroImages" hero-text="Blog Post" />
+    <Hero :hero-images="heroImages" :hero-text="$t('blogPost')" />
     <v-col cols="12" sm="10" md="8" lg="6" class="my-12">
       <h1 id="title" class="text-center">
         {{ blog.title }}
@@ -8,12 +8,12 @@
           <v-icon class="hash-link">mdi-link</v-icon>
         </a>
       </h1>
-      <p class="text-right">{{ formateDate(blog.createdAt) }}</p>
+      <p class="text-right">{{ $d(new Date(blog.createdAt), 'short') }}</p>
       <p
         v-if="blog.createdAt !== blog.updatedAt"
         class="text-right text-caption"
       >
-        Updated on: {{ formateDate(blog.updatedAt) }}
+        {{ $t('updatedOn', { date: $d(new Date(blog.updatedAt), 'short') }) }}
       </p>
       <nuxt-content class="tester1" :document="blog" />
     </v-col>
@@ -24,25 +24,29 @@
             <v-col cols="6">
               <NuxtLink
                 v-if="prev"
-                :to="{
-                  name: 'blog-slug',
-                  params: { slug: prev.slug },
-                  hash: '#title',
-                }"
+                :to="
+                  localePath({
+                    name: 'blog-slug',
+                    params: { slug: prev.slug },
+                    hash: '#title',
+                  })
+                "
               >
-                Prev
+                {{ $t('prev') }}
               </NuxtLink>
             </v-col>
             <v-col cols="6" class="text-right">
               <NuxtLink
                 v-if="next"
-                :to="{
-                  name: 'blog-slug',
-                  params: { slug: next.slug },
-                  hash: '#title',
-                }"
+                :to="
+                  localePath({
+                    name: 'blog-slug',
+                    params: { slug: next.slug },
+                    hash: '#title',
+                  })
+                "
               >
-                Next
+                {{ $t('next') }}
               </NuxtLink>
             </v-col>
           </v-row>
@@ -70,12 +74,6 @@ export default {
       next,
       heroImages,
     }
-  },
-  methods: {
-    formateDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
-    },
   },
 }
 </script>

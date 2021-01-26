@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero :hero-images="heroImages" hero-text="Contact Us" />
+    <Hero :hero-images="heroImages" :hero-text="$t('contactInfo')" />
     <InlineMessage :messages="inlinemessages" message-id="inline-3" />
   </v-row>
 </template>

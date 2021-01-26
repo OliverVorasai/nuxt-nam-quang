@@ -10,13 +10,13 @@
         <v-list-item>
           <v-list-item-content>
             <v-list-item-title class="title white--text">
-              Nam Quang Temple
+              {{ $t('namQuang') }}
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-divider />
         <template v-for="item in leftLinks.concat(rightLinks)">
-          <v-list-item :key="item.title" :to="item.to" router exact>
+          <v-list-item :key="item.title" :to="localePath(item.to)" router exact>
             <v-list-item-icon>
               <v-icon color="white" v-text="item.icon"></v-icon>
             </v-list-item-icon>
@@ -43,7 +43,7 @@
             <v-btn
               v-for="item in leftLinks"
               :key="item.title"
-              :to="item.to"
+              :to="localePath(item.to)"
               :aria-label="item.title"
               class="transparent zoom ml-1"
               exact
@@ -56,7 +56,7 @@
         </v-col>
         <v-col cols="6" md="2" align-self="center" class="text-center">
           <v-row justify="end" justify-md="center" class="mr-2 mr-sm-0">
-            <nuxt-link to="/" tag="span" style="cursor: pointer">
+            <nuxt-link :to="localePath('/')" tag="span" style="cursor: pointer">
               <v-img
                 class="zoom"
                 max-height="128"
@@ -71,7 +71,7 @@
             <v-btn
               v-for="item in rightLinks"
               :key="item.title"
-              :to="item.to"
+              :to="localePath(item.to)"
               :aria-label="item.title"
               class="transparent zoom mr-1"
               exact
@@ -80,6 +80,7 @@
             >
               {{ item.title }}
             </v-btn>
+            <LanguageInput />
           </div>
         </v-col>
       </v-row>
@@ -102,28 +103,32 @@ export default {
         {
           icon: 'mdi-information',
           title: 'About',
-          to: '/about',
+          to: 'about',
         },
         {
           icon: 'mdi-map',
           title: 'Location',
-          to: '/location',
+          to: 'location',
         },
       ],
       rightLinks: [
         {
           icon: 'mdi-post',
-          title: 'Blog',
-          to: '/blog',
+          title: this.$t('blog'),
+          to: 'blog',
         },
         {
           icon: 'mdi-phone',
           title: 'Contact',
-          to: '/contact',
+          to: 'contact',
         },
       ],
-      title: 'Nam Quang Temple',
     }
+  },
+  head() {
+    // This must be merged if other metadata is added later
+    // Refer: https://i18n.nuxtjs.org/seo/#merging-i18n-seo-metadata-with-your-own
+    return this.$nuxtI18nSeo()
   },
 }
 </script>

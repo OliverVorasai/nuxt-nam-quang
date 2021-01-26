@@ -1,6 +1,6 @@
 <template>
-  <v-row justify="center" class="mt-6">
-    <Hero :hero-images="heroImages" hero-text="Location" />
+  <v-row justify="center" align="center">
+    <Hero :hero-images="heroImages" :hero-text="$t('locationInfo')" />
     <InlineMessage :messages="inlinemessages" message-id="inline-4" dense />
     <iframe
       class="my-12"
