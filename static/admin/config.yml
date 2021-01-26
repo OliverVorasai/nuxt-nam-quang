@@ -85,3 +85,4 @@ collections:
       - { label: 'Vietnamese Title', name: 'vi-title', widget: 'string' }
       - { label: 'English Text', name: 'en-text', widget: 'markdown' }
       - { label: 'Vietnamese Text', name: 'vi-text', widget: 'markdown' }
+      - { label: 'Identifier', name: 'id', widget: string }
