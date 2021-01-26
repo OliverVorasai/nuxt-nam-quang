@@ -77,7 +77,7 @@ collections:
     folder: 'content/sutras'
     format: 'frontmatter'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{en-title}}'
     editor:
       preview: false
     fields:
