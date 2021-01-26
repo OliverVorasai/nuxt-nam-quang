@@ -11,15 +11,14 @@
                   <nuxt-link :to="localePath('about')">About Us</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link :to="localePath('location')">Location</nuxt-link>
+                  <nuxt-link :to="localePath('temple')">
+                    {{ $t('temple') }}
+                  </nuxt-link>
                 </li>
                 <li>
                   <nuxt-link :to="localePath('blog')">{{
                     $t('blog')
                   }}</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link :to="localePath('contact')">Contact</nuxt-link>
                 </li>
               </ul>
             </div>

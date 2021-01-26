@@ -1,6 +1,7 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero :hero-images="heroImages" :hero-text="$t('locationInfo')" />
+    <Hero :hero-images="heroImages" :hero-text="$t('temple')" />
+    <InlineMessage :messages="inlinemessages" message-id="inline-3" />
     <InlineMessage :messages="inlinemessages" message-id="inline-4" dense />
     <iframe
       class="my-12"
@@ -27,18 +28,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~vuetify/src/styles/settings/_variables';
+
 iframe {
   background-color: lightgray;
   width: 95%;
   border-radius: 2em;
   min-height: 500px;
+  border: 0;
 
-  @media screen and (max-width: 960px) {
+  @media #{map-get($display-breakpoints, 'sm-and-down')} {
     height: 50vh;
   }
-  @media screen and (min-width: 961px) {
+  @media #{map-get($display-breakpoints, 'md-and-up')} {
     height: 80vh;
   }
-  border: 0;
 }
 </style>

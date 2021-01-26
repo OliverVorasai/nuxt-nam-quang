@@ -106,9 +106,9 @@ export default {
           to: 'about',
         },
         {
-          icon: 'mdi-map',
-          title: 'Location',
-          to: 'location',
+          icon: 'mdi-home-map-marker',
+          title: this.$t('temple'),
+          to: 'temple',
         },
       ],
       rightLinks: [
@@ -116,11 +116,6 @@ export default {
           icon: 'mdi-post',
           title: this.$t('blog'),
           to: 'blog',
-        },
-        {
-          icon: 'mdi-phone',
-          title: 'Contact',
-          to: 'contact',
         },
       ],
     }
