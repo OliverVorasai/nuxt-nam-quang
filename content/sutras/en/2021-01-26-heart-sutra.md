@@ -10,6 +10,8 @@ all of the five Skandhas are equally empty,
 and with this realization
 he overcame all Ill-being.
 
+<!--more-->
+
 “Listen Sariputra,
 this Body itself is Emptiness
 and Emptiness itself is this Body.
