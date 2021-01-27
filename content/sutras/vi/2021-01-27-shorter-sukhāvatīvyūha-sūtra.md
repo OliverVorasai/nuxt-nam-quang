@@ -2,11 +2,13 @@
 title: A di đà kinh
 id: shorter-sukhavativyuha-sutra-1
 ---
-**Phiên âm:**
+**Phiên âm**
 
 Như thị ngã văn:
 
 Nhất thời Phật tại Xá-vệ quốc, Kỳ thọ Cấp-cô-độc viên, dữ đại Tỳ-kheo tăng, thiên nhị bá ngũ thập nhơn câu, giai thị đại A-La-hán, chúng sở tri thức: Trưởng-lão Xá-Lợi-Phất, Ma-ha Mục-kiền-liên, Ma-ha Ca-diếp, Ma-ha Ca-chiên-diên, Ma-ha Câu-hy-la, Li-bà-đa, Châu-lợi bàn-đà-dà, Nan-đà, A-Nan-đà, La-hầu-la, Kiều-phạm-ba-đề, Tân-đầu-lô-phả-la-đọa, Ca-lưu-đà-di, Ma-ha Kiếp-tân-na, Bạc-Câu-la, A-nâu-lâu-đà, như thị đẳng chư đại đệ tử, tinh chư Bồ-tát ma-ha-tát. Văn-thù Sư-lợi pháp-vương-tử, A-dật-đa Bồ-tát, Càng Đà-ha-đề Bồ-tát, Thường-tinh-tấn Bồ-tát, dữ như thị đẳng, chư đại Bồ-tát; cập Thích Đế Hoàn Nhân đẳng, vô-lượng chư thiên, đại-chúng câu.
+
+<!--more-->
 
 Nhĩ thời Phật cáo Trưởng lão Xá-Lợi-Phất: "Tùng thị Tây-phương quá thập vạn ức Phật-độ, hữu thế-giới danh viết Cực-lạc kỳ độ hữu Phật hiệu A-Di-Đà, kim hiện tại thuyết-pháp".
 
