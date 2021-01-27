@@ -101,9 +101,9 @@ export default {
       drawer: false,
       leftLinks: [
         {
-          icon: 'mdi-information',
-          title: 'About',
-          to: 'about',
+          icon: 'mdi-script-text-outline',
+          title: this.$t('sutras'),
+          to: 'sutras',
         },
         {
           icon: 'mdi-home-map-marker',

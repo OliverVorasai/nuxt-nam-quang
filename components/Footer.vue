@@ -8,7 +8,9 @@
               <h4 class="pb-4">{{ $t('siteNav') }}</h4>
               <ul>
                 <li>
-                  <nuxt-link :to="localePath('about')">About Us</nuxt-link>
+                  <nuxt-link :to="localePath('sutras')">
+                    {{ $t('sutras') }}
+                  </nuxt-link>
                 </li>
                 <li>
                   <nuxt-link :to="localePath('temple')">

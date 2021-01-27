@@ -15,7 +15,7 @@
       >
         {{ $t('updatedOn', { date: $d(new Date(blog.updatedAt), 'short') }) }}
       </p>
-      <nuxt-content class="tester1" :document="blog" />
+      <nuxt-content :document="blog" />
     </v-col>
     <v-col cols="12" class="mb-12">
       <v-row justify="center" align="center">
