@@ -4,9 +4,9 @@ id: shorter-sukhavativyuha-sutra-1
 ---
 **Phiên âm:**
 
-*Như thị ngã văn:*
+Như thị ngã văn:
 
-Nhất thời Phật tại Xá-vệ quốc, Kỳ thọ Cấp-cô-độc viên, dữ đại Tỳ-kheo tăng, thiên nhị bá ngũ thập nhơn câu, giai thị đại A-La-hán, chúng sở tri thức: Trưởng-lão Xá-Lợi-Phất, [Ma-ha Mục-kiền-liên](https://vi.wikipedia.org/wiki/M%E1%BB%A5c-ki%E1%BB%81n-li%C3%AAn "Mục-kiền-liên"), [Ma-ha Ca-diếp](https://vi.wikipedia.org/wiki/Ma-ha-ca-di%E1%BA%BFp "Ma-ha-ca-diếp"), Ma-ha Ca-chiên-diên, Ma-ha Câu-hy-la, Li-bà-đa, Châu-lợi bàn-đà-dà, Nan-đà, [A-Nan-đà](https://vi.wikipedia.org/wiki/A-nan-%C4%91%C3%A0 "A-nan-đà"), [La-hầu-la](https://vi.wikipedia.org/wiki/La-h%E1%BA%A7u-la "La-hầu-la"), Kiều-phạm-ba-đề, Tân-đầu-lô-phả-la-đọa, Ca-lưu-đà-di, Ma-ha Kiếp-tân-na, Bạc-Câu-la, A-nâu-lâu-đà, như thị đẳng chư đại đệ tử, tinh chư [Bồ-tát](https://vi.wikipedia.org/wiki/B%E1%BB%93_T%C3%A1t "Bồ Tát") ma-ha-tát. [Văn-thù Sư-lợi](https://vi.wikipedia.org/wiki/V%C4%83n-th%C3%B9-s%C6%B0-l%E1%BB%A3i "Văn-thù-sư-lợi") pháp-vương-tử, [A-dật-đa Bồ-tát](https://vi.wikipedia.org/wiki/Di-l%E1%BA%B7c "Di-lặc"), Càng Đà-ha-đề Bồ-tát, Thường-tinh-tấn Bồ-tát, dữ như thị đẳng, chư đại Bồ-tát; cập Thích Đế Hoàn Nhân đẳng, vô-lượng chư thiên, đại-chúng câu.
+Nhất thời Phật tại Xá-vệ quốc, Kỳ thọ Cấp-cô-độc viên, dữ đại Tỳ-kheo tăng, thiên nhị bá ngũ thập nhơn câu, giai thị đại A-La-hán, chúng sở tri thức: Trưởng-lão Xá-Lợi-Phất, Ma-ha Mục-kiền-liên, Ma-ha Ca-diếp, Ma-ha Ca-chiên-diên, Ma-ha Câu-hy-la, Li-bà-đa, Châu-lợi bàn-đà-dà, Nan-đà, A-Nan-đà, La-hầu-la, Kiều-phạm-ba-đề, Tân-đầu-lô-phả-la-đọa, Ca-lưu-đà-di, Ma-ha Kiếp-tân-na, Bạc-Câu-la, A-nâu-lâu-đà, như thị đẳng chư đại đệ tử, tinh chư Bồ-tát ma-ha-tát. Văn-thù Sư-lợi pháp-vương-tử, A-dật-đa Bồ-tát, Càng Đà-ha-đề Bồ-tát, Thường-tinh-tấn Bồ-tát, dữ như thị đẳng, chư đại Bồ-tát; cập Thích Đế Hoàn Nhân đẳng, vô-lượng chư thiên, đại-chúng câu.
 
 Nhĩ thời Phật cáo Trưởng lão Xá-Lợi-Phất: "Tùng thị Tây-phương quá thập vạn ức Phật-độ, hữu thế-giới danh viết Cực-lạc kỳ độ hữu Phật hiệu A-Di-Đà, kim hiện tại thuyết-pháp".
 
