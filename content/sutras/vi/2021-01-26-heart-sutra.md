@@ -2,11 +2,13 @@
 title: Tâm Kinh Bát Nhã
 id: heart-sutra-1
 ---
-**Phiên âm:**
+**Phiên âm**
 
 Quán tự tại bồ tát hành thâm Bát nhã ba la mật đa thời chiếu kiến ngũ uẩn giai không, độ nhất thiết khổ ách.
 
 Xá Lợi Tử! Sắc bất dị không, không bất dị sắc; sắc tức thị không, không tức thị sắc; thọ, tưởng, hành, thức diệc phục như thị.
+
+<!--more-->
 
 Xá Lợi Tử! Thị chư pháp không tướng, bất sanh bất diệt, bất cấu bất tịnh, bất tăng bất giảm. Thị cố không trung, vô sắc, vô thọ, tưởng, hành, thức; vô nhãn, nhĩ, tỷ, thiệt, thân, ý; vô sắc, thanh, hương, vị, xúc, pháp; vô nhãn giới, nãi chí vô ý thức giới; vô vô minh diệc vô vô minh tận; nãi chí vô lão tử, diệc vô lão tử tận; vô khổ, tập, diệt, đạo; vô trí diệc vô đắc.
 
@@ -16,7 +18,7 @@ Cố tri Bát nhã ba la mật đa, thị đại thần chú, thị đại minh 
 
 Cố thuyết Bát nhã ba la mật đa chú, tức thuyết chú viết: Yết đế, Yết đế, Ba la Yết đế, Ba la tăng Yết đế, Bồ đề. Tát bà ha.
 
-**Việt Văn:** 
+**Việt Văn**
 
 Khi Bồ-tát Quán Tự Tại hành sâu Bát-nhã Ba-la-mật-đa, Ngài soi thấy năm uẩn đều không, liền qua hết thảy khổ ách.
 
