@@ -12,7 +12,7 @@
       :reverse-order="false"
       color-classes="orange accent-1"
     />
-    <InlineMessage :messages="inlinemessages" message-id="inline-2" />
+    <QuoteMessage :quotes="quoteMessages" quote-id="thich-nhat-hanh-1" />
     <PictureMessage
       :messages="picturemessages"
       message-id="picturemessage-2"
@@ -32,17 +32,21 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
+  async asyncData({ app, $content }) {
     const blog = await $content('blog')
       .sortBy('createdAt', 'desc')
       .limit(3)
       .fetch()
+    const quoteMessages = await $content(
+      `quotemessages/${app.i18n.locale}`
+    ).fetch()
     const inlinemessages = await $content('inlinemessages').fetch()
     const picturemessages = await $content('picturemessages').fetch()
     const heroImages = await $content('heroimages').fetch()
 
     return {
       blog,
+      quoteMessages,
       inlinemessages,
       picturemessages,
       heroImages,
