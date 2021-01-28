@@ -50,7 +50,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Identifier', name: 'id', widget: string }
+      - { label: 'Identifier', name: 'id', widget: 'string' }
 
   - name: 'picturemessage'
     label: 'Picture Messages'
@@ -64,7 +64,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Identifier', name: 'id', widget: string }
+      - { label: 'Identifier', name: 'id', widget: 'string' }
 
   - name: 'heroimages'
     label: 'Hero Images'
@@ -76,6 +76,7 @@ collections:
       preview: false
     fields:
       - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Identifier', name: 'id', widget: 'string' }
 
   - name: 'sutras'
     label: 'Sutras'
