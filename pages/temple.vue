@@ -1,6 +1,10 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero :hero-images="heroImages" :hero-text="$t('temple')" />
+    <Hero
+      :hero-images="heroImages"
+      hero-id="hero-image-4"
+      :hero-text="$t('temple')"
+    />
     <InlineMessage :messages="inlinemessages" message-id="inline-3" />
     <InlineMessage :messages="inlinemessages" message-id="inline-4" dense />
     <iframe

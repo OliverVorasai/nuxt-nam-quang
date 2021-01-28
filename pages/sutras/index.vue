@@ -1,6 +1,10 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero :hero-images="heroImages" :hero-text="$t('sutras')" />
+    <Hero
+      :hero-images="heroImages"
+      hero-id="hero-image-2"
+      :hero-text="$t('sutras')"
+    />
     <SutraList :sutras="sutras" />
   </v-row>
 </template>

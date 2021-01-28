@@ -1,6 +1,6 @@
 <template>
   <div class="hero-image grey lighten-2">
-    <v-img :src="randomImage.image" height="50vh" eager>
+    <v-img :src="heroImage.image" height="50vh" eager>
       <v-row class="hero-text">
         <v-col
           v-intersect.once="fadeOnIntersect"
@@ -26,15 +26,22 @@ export default {
       require: true,
       default: () => [],
     },
+    heroId: {
+      type: String,
+      require: true,
+      default: () => '',
+    },
     heroText: {
       type: String,
-      required: true,
+      required: false,
       default: () => '',
     },
   },
   computed: {
-    randomImage() {
-      return this.heroImages[Math.floor(Math.random() * this.heroImages.length)]
+    heroImage() {
+      return this.heroImages.find((obj) => {
+        return obj.id === this.heroId
+      })
     },
   },
 }

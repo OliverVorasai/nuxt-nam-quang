@@ -1,6 +1,10 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero :hero-images="heroImages" :hero-text="$t('namQuang')" />
+    <Hero
+      :hero-images="heroImages"
+      hero-id="hero-image-3"
+      :hero-text="$t('namQuang')"
+    />
     <InlineMessage :messages="inlinemessages" message-id="inline-1" />
     <PictureMessage
       :messages="picturemessages"

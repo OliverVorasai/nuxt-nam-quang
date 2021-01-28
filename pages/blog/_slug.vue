@@ -1,6 +1,10 @@
 <template>
   <v-row justify="center" align="center">
-    <Hero :hero-images="heroImages" :hero-text="$t('blogPost')" />
+    <Hero
+      :hero-images="heroImages"
+      hero-id="hero-image-1"
+      :hero-text="$t('blog')"
+    />
     <v-col cols="12" sm="10" md="8" lg="6" class="my-12">
       <h1 id="title" class="text-center">
         {{ blog.title }}
