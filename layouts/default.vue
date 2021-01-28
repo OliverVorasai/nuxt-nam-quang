@@ -21,7 +21,7 @@
               <v-icon color="white" v-text="item.icon"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title class="white--text" v-text="item.title" />
+              <v-list-item-title class="white--text" v-text="$t(item.title)" />
             </v-list-item-content>
           </v-list-item>
         </template>
@@ -53,7 +53,7 @@
               depressed
               nuxt
             >
-              {{ item.title }}
+              {{ $t(item.title) }}
             </v-btn>
           </div>
         </v-col>
@@ -81,7 +81,7 @@
               depressed
               nuxt
             >
-              {{ item.title }}
+              {{ $t(item.title) }}
             </v-btn>
             <LanguageInput />
           </div>
@@ -105,19 +105,19 @@ export default {
       leftLinks: [
         {
           icon: 'mdi-script-text-outline',
-          title: this.$t('sutras'),
+          title: 'sutras',
           to: 'sutras',
         },
         {
           icon: 'mdi-home-map-marker',
-          title: this.$t('temple'),
+          title: 'temple',
           to: 'temple',
         },
       ],
       rightLinks: [
         {
           icon: 'mdi-post',
-          title: this.$t('blog'),
+          title: 'blog',
           to: 'blog',
         },
       ],
