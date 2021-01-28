@@ -1,4 +1,4 @@
 ---
-image: /img/pexels-ralph-chang-794549.jpg
+image: /img/buddha-head-close.jpg
 id: hero-image-2
 ---
