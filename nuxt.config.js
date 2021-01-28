@@ -65,6 +65,12 @@ export default {
         name: 'Tiếng Việt',
       },
     ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,
+    },
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
