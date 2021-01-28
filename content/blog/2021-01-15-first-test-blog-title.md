@@ -15,7 +15,7 @@ Nam et molestie eros. Sed congue nisl vel massa pretium condimentum. Suspendisse
 
 Suspendisse potenti. Aliquam euismod placerat purus rutrum porttitor. Nulla facilisi. Morbi elementum sagittis tempor. Quisque tempus orci purus, in ornare tortor sodales at. Nunc quis neque nec purus feugiat iaculis. Donec arcu diam, scelerisque nec vehicula ut, ornare porttitor massa. Vivamus ultricies lacus ac tellus scelerisque, sed auctor mi dapibus.
 
-![Lorem ipsum](/img/pexels-ric-perin-4389758.jpg "Lorem ipsum")
+![Lorem ipsum](/img/buddha-head-tree.jpg "Lorem ipsum")
 
 Donec mattis in metus in malesuada. Vestibulum euismod ligula quis nisi sodales tincidunt. Sed nibh orci, feugiat ut condimentum eget, vulputate sit amet nibh. Praesent imperdiet, orci nec fringilla ornare, est felis accumsan nulla, sed volutpat sem ante vel risus. Fusce nec augue ut leo vestibulum consequat at ac urna. Proin dapibus in lectus non aliquam. Nullam faucibus nisl et viverra auctor. Aliquam maximus lectus porta mi elementum, in cursus libero pretium. Pellentesque nec nisl sapien. Fusce vitae ornare magna. Etiam in dictum augue. Aliquam egestas risus eros, id fermentum augue porttitor a. Etiam dignissim, libero a auctor tincidunt, enim lorem malesuada ante, quis ultricies augue sem nec neque. Vestibulum eleifend massa lacus.
 
