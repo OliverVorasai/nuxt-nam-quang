@@ -5,11 +5,11 @@ description: In et sapien auctor, commodo mauris finibus, iaculis lorem.
   Curabitur quis nunc ut nulla lacinia sodales sed in velit. Curabitur ut
   blandit purus. Morbi fringilla vulputate semper. Mauris et neque convallis,
   viverra dui at, pellentesque est.
-image: /img/pexels-pixabay-236311.jpg
+image: /img/two-monks.jpg
 ---
 In et sapien auctor, commodo mauris finibus, iaculis lorem. Curabitur quis nunc ut nulla lacinia sodales sed in velit. Curabitur ut blandit purus. Morbi fringilla vulputate semper. Mauris et neque convallis, viverra dui at, pellentesque est. Pellentesque auctor est auctor, congue nisl quis, lacinia orci. Quisque pellentesque nisi elementum rutrum fermentum. Nulla egestas dignissim felis pretium consectetur. Pellentesque mollis mi ex, et placerat arcu iaculis a. Sed semper ac enim vitae ultricies. Proin pulvinar metus id turpis imperdiet, a faucibus enim aliquet. Sed et eros accumsan, auctor leo at, malesuada mauris. Quisque pharetra id ex at cursus. Proin egestas eget eros ac posuere. Nullam sit amet sagittis eros.
 
-![](/img/pexels-pixabay-236311.jpg)
+![In et sapien auctor](/img/two-monks.jpg "In et sapien auctor")
 
 In et odio ut velit pellentesque dapibus. Maecenas sapien arcu, suscipit nec varius at, vulputate in orci. Aliquam erat volutpat. Duis dignissim, ex ut dapibus placerat, odio lorem lacinia metus, id viverra ex tortor sit amet mi. Vestibulum suscipit turpis tincidunt elit bibendum ullamcorper. Aliquam bibendum viverra justo, eget condimentum diam lobortis in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut tempor vehicula diam eu maximus. Morbi ornare justo vel arcu euismod laoreet. Etiam tincidunt sagittis fringilla. Aenean erat ante, euismod imperdiet vulputate nec, elementum quis magna. Nulla aliquam, nisl quis euismod pharetra, arcu nunc cursus massa, sed ultricies dolor magna sit amet nulla. Sed id convallis tortor.
 
