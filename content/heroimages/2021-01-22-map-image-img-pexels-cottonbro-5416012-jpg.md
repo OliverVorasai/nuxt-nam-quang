@@ -1,4 +1,4 @@
 ---
-image: /img/pexels-cottonbro-5416012.jpg
+image: /img/buddha-bowl.jpg
 id: hero-image-3
 ---
