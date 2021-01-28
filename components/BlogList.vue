@@ -1,20 +1,13 @@
 <template>
-  <v-col cols="12" sm="8" md="6">
-    <v-card
-      v-for="post in blog"
-      :key="post.slug"
-      :to="localePath(post.path)"
-      nuxt
-      flat
-      class="my-12 highlight"
-    >
+  <v-col cols="12" sm="10" md="8" lg="6">
+    <v-card v-for="post in blog" :key="post.slug" class="my-12">
       <v-row
         v-intersect.once="fadeOnIntersect"
         class="fade fade-out"
         no-gutters
       >
         <v-col md="4">
-          <v-img max-height="256" max-width="512" :src="post.image"></v-img>
+          <v-img class="card-image" :src="post.image"></v-img>
         </v-col>
         <v-col>
           <v-card-text>
@@ -22,6 +15,11 @@
             <p class="display-1 text--primary">{{ post.title }}</p>
             <div class="text--primary">{{ post.description }}</div>
           </v-card-text>
+          <v-card-actions>
+            <v-btn text color="orange accent-4" :to="`blog/${post.slug}`" nuxt>
+              {{ $t('readMore') }}
+            </v-btn>
+          </v-card-actions>
         </v-col>
       </v-row>
     </v-card>
@@ -40,12 +38,17 @@ export default {
 }
 </script>
 
-<style scoped>
-.highlight {
-  border: 1px solid transparent;
-  transition: border 0.75s;
-}
-.highlight:hover {
-  border: 1px solid red;
+<style scoped lang="scss">
+@import '~vuetify/src/styles/settings/_variables';
+
+.card-image {
+  height: 100%;
+
+  @media #{map-get($display-breakpoints, 'sm-and-down')} {
+    max-height: 256px;
+  }
+  @media #{map-get($display-breakpoints, 'md-and-up')} {
+    max-height: 384px;
+  }
 }
 </style>
