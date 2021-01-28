@@ -1,4 +1,4 @@
 ---
-image: /img/pexels-aleksandar-pasaric-1344472.jpg
+image: /img/buddha-statue-outside.jpg
 id: hero-image-4
 ---
