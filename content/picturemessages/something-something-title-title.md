@@ -1,6 +1,6 @@
 ---
 title: Phasellus a elementum felis
-image: /img/pexels-julia-volk-5204642.jpg
+image: /img/candles.jpg
 id: picturemessage-1
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus placerat sem porta consectetur. Nam tristique leo nulla, ac tempor felis tristique ut. In imperdiet, diam ac euismod aliquet, purus lorem imperdiet magna, et efficitur orci elit ut tortor. Curabitur auctor maximus dictum. 
