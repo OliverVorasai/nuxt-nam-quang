@@ -26,6 +26,9 @@
           </v-list-item>
         </template>
       </v-list>
+      <span class="ml-4">
+        <LanguageInput />
+      </span>
     </v-navigation-drawer>
     <v-app-bar absolute prominent flat app color="transparent">
       <v-row class="app-bar-row mt-1">
