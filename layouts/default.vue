@@ -56,12 +56,12 @@
         </v-col>
         <v-col cols="6" md="2" align-self="center" class="text-center">
           <v-row justify="end" justify-md="center" class="mr-2 mr-sm-0">
-            <nuxt-link :to="localePath('/')" tag="span" style="cursor: pointer">
+            <nuxt-link :to="localePath('/')">
               <v-img
                 class="zoom"
-                max-height="128"
-                max-width="128"
-                :src="require('@/assets/svg/lotus.svg/')"
+                max-height="100"
+                max-width="100"
+                :src="require('@/assets/svg/dharma-wheel.svg/')"
               ></v-img>
             </nuxt-link>
           </v-row>
