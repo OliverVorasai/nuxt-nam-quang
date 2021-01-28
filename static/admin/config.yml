@@ -33,9 +33,9 @@ collections:
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - { label: 'Author', name: 'author', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Identifier', name: 'id', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string', i18n: true }
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+      - { label: 'Identifier', name: 'id', widget: 'string', i18n: 'duplicate' }
 
   - name: 'inlinemessage'
     label: 'Inline Messages'
