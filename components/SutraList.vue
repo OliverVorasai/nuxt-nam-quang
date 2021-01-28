@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" sm="8" md="6">
-    <v-card v-for="sutra in sutras" :key="sutra.slug" class="my-12 highlight">
+    <v-card v-for="sutra in sutras" :key="sutra.slug" class="my-12">
       <v-row
         v-intersect.once="fadeOnIntersect"
         class="fade fade-out"
