@@ -1,4 +1,4 @@
 ---
-image: /img/pexels-sunilkumar-krishnamoorthy-1585716.jpg
+image: /img/buddha-statue-bronze.jpg
 id: hero-image-1
 ---
