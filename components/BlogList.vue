@@ -16,7 +16,7 @@
             <div class="text--primary">{{ post.description }}</div>
           </v-card-text>
           <v-card-actions>
-            <v-btn text color="orange accent-4" :to="`blog/${post.slug}`" nuxt>
+            <v-btn text class="info ml-2 mb-2" :to="`blog/${post.slug}`" nuxt>
               {{ $t('readMore') }}
             </v-btn>
           </v-card-actions>

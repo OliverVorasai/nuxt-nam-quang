@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-image grey lighten-2">
+  <div class="hero-image">
     <v-img :src="heroImage.image" height="50vh" eager>
       <v-row class="hero-text">
         <v-col
