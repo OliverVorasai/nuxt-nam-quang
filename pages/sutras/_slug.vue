@@ -6,6 +6,9 @@
       :hero-text="$t('sutras')"
     />
     <v-col cols="12" sm="10" md="8" lg="6" class="my-12">
+      <v-btn color="info" :to="localePath('sutras')" nuxt>
+        {{ $t('backToList') }}
+      </v-btn>
       <h1 id="title" class="text-center">
         {{ sutra.title }}
         <a aria-hidden="true" :href="'#title'" tabindex="-1">
