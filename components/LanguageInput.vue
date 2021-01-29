@@ -1,7 +1,7 @@
 <template>
   <v-menu offset-y>
     <template v-slot:activator="{ on, attrs }">
-      <v-btn color="primary" v-bind="attrs" v-on="on">
+      <v-btn color="secondary" v-bind="attrs" v-on="on">
         <img
           v-if="$i18n.locale === 'en'"
           :src="require('@/assets/svg/united-states.svg')"

@@ -26,6 +26,12 @@
           </v-list-item>
         </template>
       </v-list>
+      <v-switch
+        v-model="$vuetify.theme.dark"
+        label="Dark theme"
+        class="ml-4"
+        dark
+      ></v-switch>
       <span class="ml-4">
         <LanguageInput />
       </span>
@@ -34,7 +40,6 @@
       <v-row class="app-bar-row mt-1">
         <v-col cols="6" align-self="center" class="hidden-md-and-up">
           <v-app-bar-nav-icon
-            color="black"
             aria-label="Show side navigation"
             @click.stop="drawer = !drawer"
           >

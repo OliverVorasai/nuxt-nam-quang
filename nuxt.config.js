@@ -108,11 +108,20 @@ export default {
     theme: {
       dark: false,
       themes: {
+        light: {
+          primary: colors.orange.lighten4,
+          accent: colors.blueGrey.lighten4,
+          secondary: colors.indigo.base,
+          info: colors.orange.accent4,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+        },
         dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
+          primary: colors.orange.darken4,
+          accent: colors.blueGrey.darken4,
+          secondary: colors.indigo.base,
+          info: colors.orange.darken4,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
