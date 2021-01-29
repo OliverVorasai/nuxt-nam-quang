@@ -79,6 +79,18 @@ export default {
       heroImages,
     }
   },
+  head() {
+    return {
+      title: `${this.blog.title} | ${this.$t('namQuang')}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.blog.description,
+        },
+      ],
+    }
+  },
 }
 </script>
 

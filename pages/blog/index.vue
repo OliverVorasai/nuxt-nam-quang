@@ -23,5 +23,17 @@ export default {
       heroImages,
     }
   },
+  head() {
+    return {
+      title: `${this.$t('blog')} | ${this.$t('namQuang')}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('blogMetaDesc'),
+        },
+      ],
+    }
+  },
 }
 </script>

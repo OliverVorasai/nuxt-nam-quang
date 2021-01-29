@@ -59,6 +59,14 @@ export default {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
       ],
+      title: `${this.$t('home')} | ${this.$t('namQuang')}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('indexMetaDesc'),
+        },
+      ],
     }
   },
 }
