@@ -28,6 +28,18 @@ export default {
       heroImages,
     }
   },
+  head() {
+    return {
+      title: `${this.$t('temple')} | ${this.$t('namQuang')}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('templeMetaDesc'),
+        },
+      ],
+    }
+  },
 }
 </script>
 

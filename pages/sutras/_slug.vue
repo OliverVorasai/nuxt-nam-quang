@@ -31,6 +31,18 @@ export default {
       heroImages,
     }
   },
+  head() {
+    return {
+      title: `${this.sutra.title} | ${this.$t('namQuang')}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.sutra.description,
+        },
+      ],
+    }
+  },
 }
 </script>
 

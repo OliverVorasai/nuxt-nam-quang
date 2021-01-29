@@ -24,5 +24,17 @@ export default {
       sutras,
     }
   },
+  head() {
+    return {
+      title: `${this.$t('sutras')} | ${this.$t('namQuang')}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('sutraMetaDesc'),
+        },
+      ],
+    }
+  },
 }
 </script>
