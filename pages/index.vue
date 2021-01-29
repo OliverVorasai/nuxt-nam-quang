@@ -5,7 +5,7 @@
       hero-id="hero-image-3"
       :hero-text="$t('namQuang')"
     />
-    <InlineMessage :messages="inlinemessages" message-id="inline-1" />
+    <InlineMessage :messages="inlineMessages" message-id="inline-1" />
     <PictureMessage
       :messages="pictureMessages"
       message-id="picture-message-1"
@@ -19,7 +19,7 @@
       :reverse-order="true"
       class="accent"
     />
-    <InlineMessage :messages="inlinemessages" message-id="inline-6" dense />
+    <InlineMessage :messages="inlineMessages" message-id="inline-6" dense />
     <BlogList :blog="blog" />
     <v-col cols="12" class="text-center">
       <v-btn :to="localePath('blog')" exact nuxt dark x-large class="secondary">
@@ -40,7 +40,9 @@ export default {
     const quoteMessages = await $content(
       `quotemessages/${app.i18n.locale}`
     ).fetch()
-    const inlinemessages = await $content('inlinemessages').fetch()
+    const inlineMessages = await $content(
+      `inlinemessages/${app.i18n.locale}`
+    ).fetch()
     const pictureMessages = await $content(
       `picturemessages/${app.i18n.locale}`
     ).fetch()
@@ -49,7 +51,7 @@ export default {
     return {
       blog,
       quoteMessages,
-      inlinemessages,
+      inlineMessages,
       pictureMessages,
       heroImages,
     }

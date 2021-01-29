@@ -12,9 +12,11 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
+  async asyncData({ app, $content }) {
     const blog = await $content('blog').sortBy('createdAt', 'desc').fetch()
-    const inlineMessages = await $content('inlinemessages').fetch()
+    const inlineMessages = await $content(
+      `inlinemessages/${app.i18n.locale}`
+    ).fetch()
     const heroImages = await $content('heroimages').fetch()
 
     return {
