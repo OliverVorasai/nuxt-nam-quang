@@ -3,7 +3,7 @@
     <v-row justify="center" align="center" class="mt-16" no-gutters>
       <v-col cols="12" md="8">
         <v-row class="footer-text-container my-6" no-gutters>
-          <v-col cols="12" md="4">
+          <v-col cols="12" sm="4">
             <div>
               <h4 class="pb-4">{{ $t('siteNav') }}</h4>
               <ul>
@@ -25,8 +25,23 @@
               </ul>
             </div>
           </v-col>
-          <v-col cols="12" md="4"> </v-col>
-          <v-col cols="12" md="4"> </v-col>
+          <v-col cols="12" sm="4"> </v-col>
+          <v-col cols="12" sm="4" class="mt-4">
+            <h4 class="pb-4">{{ $t('socialMedia') }}</h4>
+            <v-btn
+              v-for="item in socialItems"
+              :key="item.name"
+              :href="item.href"
+              target="_blank"
+              class="mr-2"
+              fab
+              small
+            >
+              <v-icon>
+                {{ item.icon }}
+              </v-icon>
+            </v-btn>
+          </v-col>
         </v-row>
         <v-divider></v-divider>
         <v-row class="footer-text-container my-6" justify="end" no-gutters>
@@ -36,6 +51,27 @@
     </v-row>
   </v-container>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      socialItems: [
+        {
+          name: 'facebook',
+          icon: 'mdi-facebook',
+          href: 'https://www.facebook.com/chuanamquang',
+        },
+        {
+          name: 'youtube',
+          icon: 'mdi-youtube',
+          href: 'https://www.youtube.com/user/namquangtemple',
+        },
+      ],
+    }
+  },
+}
+</script>
 
 <style scoped lang="scss">
 .container {
