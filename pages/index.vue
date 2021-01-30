@@ -10,7 +10,7 @@
       :messages="pictureMessages"
       message-id="picture-message-1"
       :reverse-order="false"
-      class="primary"
+      class="primaryOpposite"
     />
     <QuoteMessage :quotes="quoteMessages" quote-id="thich-nhat-hanh-1" />
     <PictureMessage
