@@ -96,3 +96,37 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', i18n: true }
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
       - { label: 'Identifier', name: 'id', widget: string, i18n: 'duplicate' }
+
+  - name: 'businessInfo'
+    label: 'Business Info'
+    folder: 'content/businessInfo'
+    format: 'frontmatter'
+    create: true
+    fields:
+      - { label: 'Type', name: 'type', widget: 'String' }
+      - { label: 'Id', name: 'id', widget: 'String' }
+      - { label: 'Name', name: 'name', widget: 'String' }
+      - label: 'Address'
+        name: 'address'
+        widget: 'object'
+        fields:
+          - { label: 'Type', name: 'addressType', widget: 'String' }
+          - { label: 'Street Address', name: 'addressStreet', widget: 'String' }
+          - { label: 'Locality', name: 'addressLocality', widget: 'String' }
+          - { label: 'Region', name: 'addressRegion', widget: 'String' }
+          - { label: 'Postal Code', name: 'postalCode', widget: 'String' }
+          - { label: 'Country', name: 'addressCountry', widget: 'String' }
+      - { label: 'Url', name: 'url', widget: 'String' }
+      - { label: 'Telephone', name: 'telephone', widget: 'String' }
+      - label: 'Weekday Hours'
+        name: 'weekdayHours'
+        widget: 'object'
+        fields:
+          - { label: 'Opening Hour', name: 'opens', widget: 'String' }
+          - { label: 'Closing Hour', name: 'closes', widget: 'String' }
+      - label: 'Week end Hours'
+        name: 'weekendHours'
+        widget: 'object'
+        fields:
+          - { label: 'Opening Hour', name: 'opens', widget: 'String' }
+          - { label: 'Closing Hour', name: 'closes', widget: 'String' }
