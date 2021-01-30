@@ -1,7 +1,5 @@
 ---
-title: Some title here
+title: Welcome to Nam Quang Temple
 id: inline-1
 ---
-Phasellus a elementum felis. Fusce mattis consequat nisi. Curabitur porta elit leo, ullamcorper suscipit mauris pulvinar a.
-
-Sed ac neque lacus. Donec eget quam mollis, scelerisque turpis porta, tempor lectus. Nulla nec diam vitae nisl blandit tristique sit amet eget leo. In id velit risus. Sed fringilla nisi quis velit dapibus, a imperdiet dolor viverra.
+Nam Quang Temple is a member of the New Vietnamese Buddhist Order and follows the Mahayana lineage of Buddhism. Our goal is to help others achieve nirvana through meditation and the study of Buddhist philosophy.
