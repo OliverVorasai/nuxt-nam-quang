@@ -47,6 +47,9 @@ export default {
       `picturemessages/${app.i18n.locale}`
     ).fetch()
     const heroImages = await $content('heroimages').fetch()
+    const businessInfo = await $content(
+      'businessInfo/single-businessInfo'
+    ).fetch()
 
     return {
       blog,
@@ -54,12 +57,52 @@ export default {
       inlineMessages,
       pictureMessages,
       heroImages,
+      businessInfo,
     }
   },
   head() {
     return {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+        {
+          type: 'application/ld+json',
+          json: {
+            '@context': 'https://schema.org/',
+            '@type': this.businessInfo.type,
+            '@id': this.businessInfo.id,
+            name: this.businessInfo.name,
+            address: {
+              '@type': this.businessInfo.address.addressType,
+              streetAddress: this.businessInfo.address.addressStreet,
+              addressLocality: this.businessInfo.address.addressLocality,
+              addressRegion: this.businessInfo.address.addressRegion,
+              postalCode: this.businessInfo.address.postalCode,
+              addressCountry: this.businessInfo.address.addressCountry,
+            },
+            url: this.businessInfo.url,
+            telephone: this.businessInfo.telephone,
+            openingHoursSpecification: [
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: [
+                  'Monday',
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday',
+                ],
+                opens: this.businessInfo.weekdayHours.opens,
+                closes: this.businessInfo.weekdayHours.closes,
+              },
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: ['Saturday', 'Sunday'],
+                opens: this.businessInfo.weekendHours.opens,
+                closes: this.businessInfo.weekendHours.closes,
+              },
+            ],
+          },
+        },
       ],
       title: `${this.$t('home')} | ${this.$t('namQuang')}`,
       meta: [
