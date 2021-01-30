@@ -5,6 +5,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
   fermentum ipsum neque, at eleifend felis venenatis eu. Nullam tempor tortor
   libero, et placerat ligula tempor congue. Vestibulum vestibulum in sapien eu
   scelerisque. In quis justo vel quam eleifend ultrices eu a orci.
+blockImage: false
 image: /img/buddha-head-tree.jpg
 ---
 ## Test Header H2
