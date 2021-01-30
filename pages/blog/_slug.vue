@@ -29,7 +29,7 @@
         <v-col cols="12" sm="10" md="8" lg="6">
           <v-row>
             <v-col cols="6">
-              <NuxtLink
+              <v-btn
                 v-if="prev"
                 :to="
                   localePath({
@@ -38,12 +38,13 @@
                     hash: '#title',
                   })
                 "
+                color="info"
               >
                 {{ $t('prev') }}
-              </NuxtLink>
+              </v-btn>
             </v-col>
             <v-col cols="6" class="text-right">
-              <NuxtLink
+              <v-btn
                 v-if="next"
                 :to="
                   localePath({
@@ -52,9 +53,10 @@
                     hash: '#title',
                   })
                 "
+                color="info"
               >
                 {{ $t('next') }}
-              </NuxtLink>
+              </v-btn>
             </v-col>
           </v-row>
         </v-col>
