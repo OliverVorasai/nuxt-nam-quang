@@ -15,8 +15,16 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider />
-        <template v-for="item in leftLinks.concat(rightLinks)">
-          <v-list-item :key="item.title" :to="localePath(item.to)" router exact>
+        <template
+          v-for="item in navDrawerLinks.concat(leftLinks.concat(rightLinks))"
+        >
+          <v-list-item
+            :key="item.title"
+            :to="localePath(item.to)"
+            router
+            nuxt
+            exact
+          >
             <v-list-item-icon>
               <v-icon color="white" v-text="item.icon"></v-icon>
             </v-list-item-icon>
@@ -107,6 +115,13 @@ export default {
   data() {
     return {
       drawer: false,
+      navDrawerLinks: [
+        {
+          icon: 'mdi-home',
+          title: 'home',
+          to: '/',
+        },
+      ],
       leftLinks: [
         {
           icon: 'mdi-script-text-outline',
