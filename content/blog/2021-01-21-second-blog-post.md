@@ -5,6 +5,7 @@ description: In et sapien auctor, commodo mauris finibus, iaculis lorem.
   Curabitur quis nunc ut nulla lacinia sodales sed in velit. Curabitur ut
   blandit purus. Morbi fringilla vulputate semper. Mauris et neque convallis,
   viverra dui at, pellentesque est.
+blockImage: false
 image: /img/two-monks.jpg
 ---
 In et sapien auctor, commodo mauris finibus, iaculis lorem. Curabitur quis nunc ut nulla lacinia sodales sed in velit. Curabitur ut blandit purus. Morbi fringilla vulputate semper. Mauris et neque convallis, viverra dui at, pellentesque est. Pellentesque auctor est auctor, congue nisl quis, lacinia orci. Quisque pellentesque nisi elementum rutrum fermentum. Nulla egestas dignissim felis pretium consectetur. Pellentesque mollis mi ex, et placerat arcu iaculis a. Sed semper ac enim vitae ultricies. Proin pulvinar metus id turpis imperdiet, a faucibus enim aliquet. Sed et eros accumsan, auctor leo at, malesuada mauris. Quisque pharetra id ex at cursus. Proin egestas eget eros ac posuere. Nullam sit amet sagittis eros.
