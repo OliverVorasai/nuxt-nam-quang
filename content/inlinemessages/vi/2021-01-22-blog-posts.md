@@ -1,5 +1,5 @@
 ---
-title: Blog Posts
+title: "Bài Đăng Trên Blog "
 id: inline-6
 ---
-Please enjoy reading a few of our select blog posts.
+Xin vui lòng đọc một số bài đăng blog chọn lọc của chúng tôi.
