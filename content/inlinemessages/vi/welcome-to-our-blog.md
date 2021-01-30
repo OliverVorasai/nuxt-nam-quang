@@ -1,5 +1,5 @@
 ---
-title: Welcome to our Blog
+title: Chào mừng đến với blog của chúng tôi
 id: inline-5
 ---
-Please click on the images or descriptions below to read more.
+Vui lòng nhấp vào hình ảnh hoặc mô tả bên dưới để đọc thêm.
