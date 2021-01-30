@@ -1,5 +1,5 @@
 ---
-title: Property Information
+title: Thông Tin Tài Sản
 id: inline-4
 ---
-The gated entrance to the parking lot is only wide enough for a single vehicle. Please check if the pathway is clear before entering or exiting.
+Cổng vào bãi đậu xe chỉ đủ rộng cho một chiếc xe duy nhất. Vui lòng kiểm tra xem đường dẫn có rõ ràng hay không trước khi vào hoặc ra.
