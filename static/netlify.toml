@@ -1,0 +1,3 @@
+[build.environment]
+  CI = "1"
+  NPM_FLAGS = "--no-optional"
