@@ -1,7 +1,5 @@
 ---
-title: Some title here
+title: Chào mừng đến với Chùa Nam Quang
 id: inline-1
 ---
-Phasellus a elementum felis. Fusce mattis consequat nisi. Curabitur porta elit leo, ullamcorper suscipit mauris pulvinar a.
-
-Sed ac neque lacus. Donec eget quam mollis, scelerisque turpis porta, tempor lectus. Nulla nec diam vitae nisl blandit tristique sit amet eget leo. In id velit risus. Sed fringilla nisi quis velit dapibus, a imperdiet dolor viverra.
+Chùa Nam Quang trực thuộc Giáo Hội Phật Giáo Việt Nam Trên Thế Giới thực hành Đại Thừa Tông Giáo. Chùa là nơi chúng ta thực tập Thiền Định Triết hoc Phật Giáo giúp chúng ta đạt cảnh giới Niết Bàn.
