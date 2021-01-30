@@ -8,13 +8,14 @@
   "blogPost": "Bài Viết Trên Blog",
   "next": "Tiếp",
   "prev": "Trước",
-  "siteNav": "Điều Hướng Trang",
-  "socialMedia": "Xã Hội",
+  "siteNav": "Trang Chỉ Dẫn",
+  "socialMedia": "Mạng Xã Hội",
   "updatedOn": "Cập nhật vào: {date}",
   "sutras": "Kinh",
   "readMore": "Đọc Thêm",
   "indexMetaDesc": "Chùa Nam Quang thuộc Giáo Hội Việt Nam Trên Thế Giới thực hành theo Bấc Tông",
   "templeMetaDesc": "địa chỉ liên lạc của Chùa Nam Quang",
   "sutraMetaDesc": "Những câu Chú dùng nơi Chùa Nam Quang",
-  "blogMetaDesc": "Bài viết chỉ dẫn tâm linh của Chùa Nam Quang"
+  "blogMetaDesc": "Bài viết chỉ dẫn tâm linh của Chùa Nam Quang",
+  "darkMode": "Màn Tối"
 }

@@ -28,7 +28,7 @@
       </v-list>
       <v-switch
         v-model="$vuetify.theme.dark"
-        label="Dark theme"
+        :label="$t('darkMode')"
         class="ml-4"
         dark
       ></v-switch>
