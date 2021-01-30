@@ -12,9 +12,9 @@ address:
 url: https://namquangtemple.org
 telephone: "+15032540875"
 weekdayHours:
-  opens: 08:00
-  closes: 18:00
+  opens: "08:00"
+  closes: "18:00"
 weekendHours:
-  opens: 08:00
-  closes: 16:00
+  opens: "08:00"
+  closes: "16:00"
 ---
