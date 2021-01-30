@@ -103,30 +103,30 @@ collections:
     format: 'frontmatter'
     create: true
     fields:
-      - { label: 'Type', name: 'type', widget: 'String' }
-      - { label: 'Id', name: 'id', widget: 'String' }
-      - { label: 'Name', name: 'name', widget: 'String' }
+      - { label: 'Type', name: 'type', widget: 'string' }
+      - { label: 'Id', name: 'id', widget: 'string' }
+      - { label: 'Name', name: 'name', widget: 'string' }
       - label: 'Address'
         name: 'address'
         widget: 'object'
         fields:
-          - { label: 'Type', name: 'addressType', widget: 'String' }
-          - { label: 'Street Address', name: 'addressStreet', widget: 'String' }
-          - { label: 'Locality', name: 'addressLocality', widget: 'String' }
-          - { label: 'Region', name: 'addressRegion', widget: 'String' }
-          - { label: 'Postal Code', name: 'postalCode', widget: 'String' }
-          - { label: 'Country', name: 'addressCountry', widget: 'String' }
-      - { label: 'Url', name: 'url', widget: 'String' }
-      - { label: 'Telephone', name: 'telephone', widget: 'String' }
+          - { label: 'Type', name: 'addressType', widget: 'string' }
+          - { label: 'Street Address', name: 'addressStreet', widget: 'string' }
+          - { label: 'Locality', name: 'addressLocality', widget: 'string' }
+          - { label: 'Region', name: 'addressRegion', widget: 'string' }
+          - { label: 'Postal Code', name: 'postalCode', widget: 'string' }
+          - { label: 'Country', name: 'addressCountry', widget: 'string' }
+      - { label: 'Url', name: 'url', widget: 'string' }
+      - { label: 'Telephone', name: 'telephone', widget: 'string' }
       - label: 'Weekday Hours'
         name: 'weekdayHours'
         widget: 'object'
         fields:
-          - { label: 'Opening Hour', name: 'opens', widget: 'String' }
-          - { label: 'Closing Hour', name: 'closes', widget: 'String' }
+          - { label: 'Opening Hour', name: 'opens', widget: 'string' }
+          - { label: 'Closing Hour', name: 'closes', widget: 'string' }
       - label: 'Week end Hours'
         name: 'weekendHours'
         widget: 'object'
         fields:
-          - { label: 'Opening Hour', name: 'opens', widget: 'String' }
-          - { label: 'Closing Hour', name: 'closes', widget: 'String' }
+          - { label: 'Opening Hour', name: 'opens', widget: 'string' }
+          - { label: 'Closing Hour', name: 'closes', widget: 'string' }
