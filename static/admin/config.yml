@@ -24,6 +24,12 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Block Image',
+          name: 'blockImage',
+          widget: 'boolean',
+          default: false,
+        }
       - { label: 'Preview Image', name: 'image', widget: 'image' }
 
   - name: 'quotemessage'
