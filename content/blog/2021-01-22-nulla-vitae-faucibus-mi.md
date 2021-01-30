@@ -5,6 +5,7 @@ description: Nulla vitae faucibus mi, non vestibulum nibh. Morbi vitae fringilla
   sem, suscipit interdum quam. Etiam augue odio, malesuada ac posuere ac,
   elementum et elit. In auctor fermentum eros, quis gravida lacus vehicula at.
   Nam id velit maximus leo eleifend feugiat facilisis eu arcu.
+blockImage: false
 image: /img/buddha-head-blue.jpg
 ---
 Nulla vitae faucibus mi, non vestibulum nibh. Morbi vitae fringilla sem, suscipit interdum quam. Etiam augue odio, malesuada ac posuere ac, elementum et elit. In auctor fermentum eros, quis gravida lacus vehicula at. Nam id velit maximus leo eleifend feugiat facilisis eu arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin dignissim maximus diam ac pharetra. Phasellus non porta sem, at scelerisque purus. Morbi fringilla imperdiet facilisis. Pellentesque feugiat ullamcorper libero at mollis. Suspendisse sed dapibus felis. Morbi libero odio, efficitur sit amet justo sed, rhoncus vehicula nisl. Morbi rhoncus elit sit amet lacus faucibus, sed viverra nunc ultricies. Vivamus vel lectus sit amet diam scelerisque ornare.
