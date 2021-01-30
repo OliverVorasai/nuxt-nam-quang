@@ -2,7 +2,7 @@
 title: Launch of the new namquangtemple.org!
 date: 2021-01-30T03:22:53.857Z
 description: Our new website is finally complete. Read this blog post for more details!
-blockImage: false
+blockImage: true
 image: /img/web-launch.png
 ---
 ![website launch banner](/img/web-launch.png "website launch banner")
