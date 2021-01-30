@@ -1,5 +1,5 @@
 <template>
-  <div class="picture-message-container">
+  <v-col cols="12" class="pa-0">
     <v-row no-gutters>
       <v-col cols="12" md="6" align-self="center" :order="setMessageOrder">
         <div v-intersect.once="fadeOnIntersect" class="pa-12 fade fade-out">
@@ -16,7 +16,7 @@
         ></v-img>
       </v-col>
     </v-row>
-  </div>
+  </v-col>
 </template>
 
 <script>
@@ -58,11 +58,5 @@ export default {
 <style>
 .unset-width {
   width: unset !important;
-}
-</style>
-
-<style scoped>
-.picture-message-container {
-  position: relative;
 }
 </style>
