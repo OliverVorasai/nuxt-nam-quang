@@ -102,6 +102,7 @@ collections:
     folder: 'content/businessInfo'
     format: 'frontmatter'
     create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{type}}'
     fields:
       - { label: 'Type', name: 'type', widget: 'string' }
       - { label: 'Id', name: 'id', widget: 'string' }
