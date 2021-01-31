@@ -11,7 +11,7 @@
       </v-btn>
       <h1 id="title" class="text-center">
         {{ sutra.title }}
-        <a aria-hidden="true" :href="'#title'" tabindex="-1">
+        <a aria-hidden="true" :href="'#title'" tabindex="-1" class="hash-a-tag">
           <v-icon class="hash-link">mdi-link</v-icon>
         </a>
       </h1>
@@ -50,6 +50,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.hash-a-tag {
+  text-decoration: unset;
+}
 .hash-link {
   transform: rotate(-45deg);
 }
