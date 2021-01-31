@@ -7,13 +7,14 @@
           <nuxt-content :document="message" />
         </div>
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col class="citation-bubble" cols="12" md="6">
         <v-img
           :src="message.image"
           height="100%"
           :content-class="'unset-width'"
           eager
         ></v-img>
+        <SourceButton :source-link="message.source" />
       </v-col>
     </v-row>
   </v-col>
@@ -58,5 +59,11 @@ export default {
 <style>
 .unset-width {
   width: unset !important;
+}
+</style>
+
+<style scoped>
+.citation-bubble {
+  position: relative;
 }
 </style>
