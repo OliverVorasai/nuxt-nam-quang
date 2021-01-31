@@ -1,5 +1,5 @@
 ---
-title: Events at Nam Quang Temple
+title: Events at Nam-Quang Temple
 image: /img/candles.jpg
 id: picture-message-1
 ---
