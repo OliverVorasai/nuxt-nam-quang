@@ -11,7 +11,7 @@
       </v-btn>
       <h1 id="title" class="text-center">
         {{ blogPost.title }}
-        <a aria-hidden="true" :href="'#title'" tabindex="-1">
+        <a aria-hidden="true" :href="'#title'" tabindex="-1" class="hash-a-tag">
           <v-icon class="hash-link">mdi-link</v-icon>
         </a>
       </h1>
@@ -140,6 +140,10 @@ export default {
       padding-bottom: 1em;
     }
   }
+}
+
+.hash-a-tag {
+  text-decoration: unset;
 }
 
 .hash-link {
