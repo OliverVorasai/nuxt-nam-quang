@@ -70,6 +70,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
       - { label: 'Image', name: 'image', widget: 'image', i18n: 'duplicate' }
       - { label: 'Identifier', name: 'id', widget: 'string', i18n: 'duplicate' }
+      - { label: 'Source', name: 'source', width: 'string', i18n: 'duplicate' }
 
   - name: 'heroimages'
     label: 'Hero Images'
@@ -82,6 +83,7 @@ collections:
     fields:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Identifier', name: 'id', widget: 'string' }
+      - { label: 'Source', name: 'source', width: 'string' }
 
   - name: 'sutras'
     label: 'Sutras'

@@ -15,6 +15,7 @@
         </v-col>
       </v-row>
     </v-img>
+    <SourceButton :source-link="heroImage.source" />
   </div>
 </template>
 

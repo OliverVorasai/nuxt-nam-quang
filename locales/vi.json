@@ -17,5 +17,6 @@
   "templeMetaDesc": "địa chỉ liên lạc của Chùa Nam-Quang",
   "sutraMetaDesc": "Những câu Chú dùng nơi Chùa Nam-Quang",
   "blogMetaDesc": "Bài viết chỉ dẫn tâm linh của Chùa Nam-Quang",
-  "darkMode": "Màn Tối"
+  "darkMode": "Màn Tối",
+  "source": "Nguồn: {url}"
 }
