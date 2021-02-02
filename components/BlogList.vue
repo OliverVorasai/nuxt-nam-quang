@@ -10,10 +10,10 @@
           <v-img class="card-image" :src="post.image"></v-img>
         </v-col>
         <v-col>
-          <v-card-text>
+          <v-card-text class="card-text">
             <div>{{ $d(new Date(post.createdAt), 'short') }}</div>
-            <p class="display-1 text--primary">{{ post.title }}</p>
-            <div class="text--primary">{{ post.description }}</div>
+            <p class="display-1">{{ post.title }}</p>
+            <div>{{ post.description }}</div>
           </v-card-text>
           <v-card-actions>
             <v-btn text class="info ml-2 mb-2" :to="`blog/${post.slug}`" nuxt>
@@ -50,5 +50,9 @@ export default {
   @media #{map-get($display-breakpoints, 'md-and-up')} {
     max-height: 384px;
   }
+}
+
+.card-text {
+  color: black;
 }
 </style>
