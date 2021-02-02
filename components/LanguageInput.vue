@@ -6,11 +6,13 @@
           v-if="$i18n.locale === 'en'"
           :src="require('@/assets/svg/united-states.svg')"
           class="flag"
+          aria-hidden="true"
         />
         <img
           v-else-if="$i18n.locale === 'vi'"
           :src="require('@/assets/svg/vietnam.svg')"
           class="flag"
+          aria-hidden="true"
         />
         {{ getLanguage }}
       </v-btn>

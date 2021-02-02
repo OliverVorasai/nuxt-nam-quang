@@ -72,7 +72,7 @@
         </v-col>
         <v-col cols="6" md="2" align-self="center" class="text-center">
           <v-row justify="end" justify-md="center" class="mr-2 mr-sm-0">
-            <nuxt-link :to="localePath('/')">
+            <nuxt-link :to="localePath('/')" aria-label="home">
               <v-img
                 class="zoom"
                 max-height="100"
