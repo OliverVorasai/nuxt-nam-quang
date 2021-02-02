@@ -57,6 +57,7 @@ export default {
 .hero-text {
   height: 100%;
   h2 {
+    font-display: swap;
     font-family: 'Lora', serif !important;
   }
 }

@@ -12,7 +12,7 @@
       <h1 id="title" class="text-center">
         {{ blogPost.title }}
         <a aria-hidden="true" :href="'#title'" tabindex="-1" class="hash-a-tag">
-          <v-icon class="hash-link">mdi-link</v-icon>
+          <v-icon class="hash-link">{{ mdiLink }}</v-icon>
         </a>
       </h1>
       <p class="text-right">{{ $d(new Date(blogPost.createdAt), 'short') }}</p>
@@ -71,6 +71,8 @@
 </template>
 
 <script>
+import { mdiLink } from '@mdi/js'
+
 export default {
   async asyncData({ $content, params }) {
     const blogPost = await $content('blog', params.slug).fetch()
@@ -87,6 +89,11 @@ export default {
       prev,
       next,
       heroImages,
+    }
+  },
+  data() {
+    return {
+      mdiLink,
     }
   },
   head() {
