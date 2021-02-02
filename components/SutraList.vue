@@ -14,7 +14,7 @@
         </v-card-text>
         <v-card-actions>
           <v-btn text class="info ml-2 mb-2" :to="`sutras/${sutra.slug}`" nuxt>
-            {{ $t('readMore') }}
+            {{ $t('readThisSutra') }}
           </v-btn>
         </v-card-actions>
       </v-row>
