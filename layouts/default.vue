@@ -51,7 +51,7 @@
             aria-label="Show side navigation"
             @click.stop="drawer = !drawer"
           >
-            <v-icon> mdi-menu </v-icon>
+            <v-icon> {{ mdiMenu }} </v-icon>
           </v-app-bar-nav-icon>
         </v-col>
         <v-col align-self="center" class="hidden-sm-and-down">
@@ -111,32 +111,41 @@
 </template>
 
 <script>
+import {
+  mdiHome,
+  mdiScriptTextOutline,
+  mdiHomeMapMarker,
+  mdiPost,
+  mdiMenu,
+} from '@mdi/js'
+
 export default {
   data() {
     return {
+      mdiMenu,
       drawer: false,
       navDrawerLinks: [
         {
-          icon: 'mdi-home',
+          icon: mdiHome,
           title: 'home',
           to: '/',
         },
       ],
       leftLinks: [
         {
-          icon: 'mdi-script-text-outline',
+          icon: mdiScriptTextOutline,
           title: 'sutras',
           to: 'sutras',
         },
         {
-          icon: 'mdi-home-map-marker',
+          icon: mdiHomeMapMarker,
           title: 'temple',
           to: 'temple',
         },
       ],
       rightLinks: [
         {
-          icon: 'mdi-post',
+          icon: mdiPost,
           title: 'blog',
           to: 'blog',
         },

@@ -23,7 +23,7 @@
     <BlogList :blog="blog" />
     <v-col cols="12" class="text-center">
       <v-btn :to="localePath('blog')" exact nuxt dark x-large class="secondary">
-        <v-icon left> mdi-post </v-icon>
+        <v-icon left> {{ mdiPost }} </v-icon>
         {{ $t('viewMore') }}
       </v-btn>
     </v-col>
@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import { mdiPost } from '@mdi/js'
+
 export default {
   async asyncData({ app, $content }) {
     const blog = await $content('blog')
@@ -60,10 +62,14 @@ export default {
       businessInfo,
     }
   },
+  data() {
+    return {
+      mdiPost,
+    }
+  },
   head() {
     return {
       script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
         {
           type: 'application/ld+json',
           json: {

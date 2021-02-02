@@ -51,6 +51,7 @@ export default {
 @import '~vuetify/src/styles/settings/_variables';
 
 ::v-deep .nuxt-content {
+  font-display: swap;
   font-family: 'Vollkorn', serif;
   @media #{map-get($display-breakpoints, 'sm-and-down')} {
     font-size: 1.5rem;

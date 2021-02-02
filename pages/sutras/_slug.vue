@@ -12,7 +12,7 @@
       <h1 id="title" class="text-center">
         {{ sutra.title }}
         <a aria-hidden="true" :href="'#title'" tabindex="-1" class="hash-a-tag">
-          <v-icon class="hash-link">mdi-link</v-icon>
+          <v-icon class="hash-link"> {{ mdiLink }} </v-icon>
         </a>
       </h1>
       <nuxt-content :document="sutra" />
@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import { mdiLink } from '@mdi/js'
+
 export default {
   async asyncData({ app, $content, params }) {
     const sutra = await $content(
@@ -32,6 +34,11 @@ export default {
     return {
       sutra,
       heroImages,
+    }
+  },
+  data() {
+    return {
+      mdiLink,
     }
   },
   head() {

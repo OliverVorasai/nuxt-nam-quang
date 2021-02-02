@@ -34,16 +34,6 @@ export default {
         rel: 'preconnect',
         href: 'https://fonts.gstatic.com',
       },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap',
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,400;1,500;1,600;1,700&display=swap',
-      },
     ],
   },
 
@@ -102,6 +92,11 @@ export default {
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
+    defaultAssets: {
+      font: false,
+      icons: false,
+    },
     theme: {
       dark: false,
       themes: {

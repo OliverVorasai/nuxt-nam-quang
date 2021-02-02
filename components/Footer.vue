@@ -53,18 +53,20 @@
 </template>
 
 <script>
+import { mdiFacebook, mdiYoutube } from '@mdi/js'
+
 export default {
   data() {
     return {
       socialItems: [
         {
           name: 'facebook',
-          icon: 'mdi-facebook',
+          icon: mdiFacebook,
           href: 'https://www.facebook.com/chuanamquang',
         },
         {
           name: 'youtube',
-          icon: 'mdi-youtube',
+          icon: mdiYoutube,
           href: 'https://www.youtube.com/user/namquangtemple',
         },
       ],
