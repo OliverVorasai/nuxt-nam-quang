@@ -34,6 +34,8 @@
               :href="item.href"
               target="_blank"
               class="mr-2"
+              :aria-label="item.name"
+              rel="noopener"
               fab
               small
             >

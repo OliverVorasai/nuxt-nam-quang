@@ -4,6 +4,7 @@
     target="_blank"
     class="source-button mr-1 mb-1"
     color="white"
+    rel="noopener"
     rounded
     x-small
     outlined

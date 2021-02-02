@@ -6,11 +6,17 @@
           v-if="$i18n.locale === 'en'"
           :src="require('@/assets/svg/united-states.svg')"
           class="flag"
+          aria-hidden="true"
+          height="1.5em"
+          width="1.5em"
         />
         <img
           v-else-if="$i18n.locale === 'vi'"
           :src="require('@/assets/svg/vietnam.svg')"
           class="flag"
+          aria-hidden="true"
+          height="1.5em"
+          width="1.5em"
         />
         {{ getLanguage }}
       </v-btn>
@@ -46,6 +52,7 @@ export default {
 <style scoped>
 .flag {
   height: 1.5em;
+  width: 1.5em;
   margin-right: 0.5em;
 }
 </style>
