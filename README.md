@@ -1,20 +1,5 @@
-# nuxt-nam-quang
+# Nuxt Project for Nam Quang Temple
 
-## Build Setup
+Nam Quang Temple is a non-profit organization. Visit and support the organization here: https://namquangtemple.org/
 
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+<sub>This code base shown for demonstrative purposes</sub>
