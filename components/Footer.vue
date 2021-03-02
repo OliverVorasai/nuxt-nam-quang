@@ -47,7 +47,15 @@
         </v-row>
         <v-divider></v-divider>
         <v-row class="footer-text-container my-6" justify="end" no-gutters>
-          <strong>{{ $t('namQuang') }}</strong>
+          <a
+            href="https://blossomwebdesigns.com/"
+            rel="noopener"
+            target="_blank"
+            aria-label="Link to website designer"
+            class="designer-link"
+          >
+            {{ $t('designedBy') }}
+          </a>
         </v-row>
       </v-col>
     </v-row>
@@ -104,5 +112,9 @@ ul {
     font-size: 0.875em;
     color: white;
   }
+}
+.designer-link {
+  color: white;
+  text-decoration: none;
 }
 </style>
